@@ -1,0 +1,76 @@
+\documentclass[a4paper]{book}
+
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{inputenc}
+\usepackage{amsmath}
+%\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[plainpages=false,unicode]{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+
+%FROM SEPA
+%\usepackage{latexsym}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, amsbsy}
+%\usepackage{float}
+\usepackage{epsfig,float,graphicx}
+%\usepackage{pdfpages} 
+%\usepackage{pifont}
+%\restylefloat{table}
+%%
+
+%\title{Matemática Discreta - Programa da disciplina}
+%\author{Dizando Norton, MSc}
+%\date{\today}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\newcommand*{\titleGM}{\begingroup % Create the command for including the title page in the document
+\hbox{ % Horizontal box
+\hspace*{0.2\textwidth} % Whitespace to the left of the title page
+\rule{1pt}{\textheight} % Vertical line
+\hspace*{0.05\textwidth} % Whitespace between the vertical line and title page text
+\parbox[b]{0.75\textwidth}{ % Paragraph box which restricts text to less than the width of the page
+
+{\noindent\Huge\bfseries Estrutura Discreta}\\[4\baselineskip] % Title
+%{\large {Programa da disciplina}}\\[4\baselineskip] % Tagline or further description
+{\Large \textsc{Dizando Norton}\\[1\baselineskip} % Author name
+{\large (dizando.norton@gmail.com)}
+
+\vspace{0.5\textheight} % Whitespace between the title block and the publisher
+{\small \noindent {DEI - Ciência da Computação}}\\[\baselineskip] % Publisher and logo
+{\small \textsc{Faculdade de Ciências - Universidade Agostinho Neto}}
+}}
+\endgroup}
+
+\begin{document}
+%\maketitle
+\pagestyle{empty} % Removes page numbers
+
+\titleGM % This command includes the title page
+
+\input{description.tex}
+\input{aulas/1.tex}
+\input{aulas/1exercicios.tex}
+\input{aulas/2.tex}
+\input{aulas/2exercicios.tex}
+\input{aulas/3.tex}
+\input{aulas/3exercicios.tex}
+\input{aulas/4.tex}
+\input{aulas/4exercicios.tex}
+\input{aulas/5.tex}
+\input{aulas/5exercicios.tex}
+\input{aulas/6.tex}
+\input{aulas/6exercicios.tex}
+\input{aulas/7.tex}
+\input{aulas/7exercicios.tex}
+\input{aulas/8.tex}
+\input{aulas/8exercicios.tex}
+\input{aulas/cf.tex}
+
+\end{document}

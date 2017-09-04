@@ -1053,7 +1053,71 @@ atribuição de valores lógicos a $p, q$ e $r$ torna $(p \lor \lnot q) \land (q
 \section{Predicados e Quantificadores}
 
 \subsection*{\underline{Introdução}}
+
+A lógica proposicional, estudada anteriormente, não pode adequadamente expressar
+o significado de todas as sentenças matemáticas e na linguagem natural. Por
+exemplo, imagine que sabemos que
+
+\begin{center}\emph{``Todo o computador conectado à rede da
+Universidade está a funcionar devidamente,''}\end{center}
+
+Nenhuma regra da lógica proposicional nos permite concluir a veracidade da
+sentença
+
+\begin{center}\emph{``O computador A está a funcionar devidamente''}\end{center}
+
+onde o computador A é um dos computadores conectados à rede da Universidade. Da
+mesma forma, não usar as regras da lógica proposicional para concluir que da
+sentença
+
+\begin{center}\emph{``O computador B está sob ataque,''}\end{center},
+
+onde B é um computador na rede da Universidade, para concluir a veracidade de
+
+\begin{center}\emph{``Existe um computador da rede da
+Universidade que está sob ataque.''}\end{center}
+
+Nesta secção iremos apresentar um tipo de lógica mais poderosa chamada
+\textbf{lógica de predicados}. Veremos como a lógica de predicados pode ser
+utilizada para expressar o significado de um número elevado de sentenças em
+matemática e em Ciência da Computação de maneiras que nos permitam raciocinar e
+explorar relações entre objectos. Para entender a lógica de predicados,
+precisamos primeiramente perceber o conceito de predicado. Posteriormente,
+iremos introduzir o conceito de quantificadores, que nos permitem raciocinar com
+sentenças que afirmam que uma certa propriedade é verdadeira (ou procede) para
+todos os objectos de um certo tipo e com sentenças que afirmam a existência de
+um objecto com uma propriedade particular.
+
+
 \subsection*{\underline{Predicados}}
+ 
+Sentenças envolvendo variáveis, como
+
+\begin{center}\emph{``$x > 3$'', ``$x = y + 3$'', ``$x + y = z$''}\end{center}
+
+e
+
+\begin{center}\emph{``O computador $x$ está sob ataque''}\end{center}
+
+e
+
+\begin{center}\emph{``O computador $x$ está a funcionar devidamente''}\end{center}
+
+são geralmente encontradas em asserções matemáticas, em programas de computador,
+e na especificação de sistemas. Estas sentenças não são nem verdadeiras nem
+falsas quando os valores das variáveis não são especificados. Nesta secção,
+iremos discutir sobre a forma como proposições podem ser produzidas a partir
+destas sentenças.
+
+A sentença ``$x$ é maior que 3'' possui duas partes. A primeira parte, a
+variável $x$, é o sujeito da sentença. A segunda parte - o \textbf{predicado},
+``é maior que 3'' - refere-se a uma propriedade que o sujeito da sentença pode
+ter. Podemos denotar a sentença ``$x$ é maior que 3'' por $P(x)$, onde $P$
+denota o predicado ``é maior que 3'' e $x$ é a variável. A sentença $P(x)$ é
+também chamada de o valor da \textbf{função proposicional} $P$ em $x$. Quando um
+valor é atribuído à variável $x$, a sentença $P(x)$ torna-se numa proposição e
+possui um valor lógico. Considere os exemplos a seguir.
+ 
 \subsection*{\underline{Quantificadores}}
 \subsection*{\underline{Quantificadores com Domínios Restrictos}}
 \subsection*{\underline{Precedência de Quantificadores}}

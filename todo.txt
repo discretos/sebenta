@@ -7,3 +7,5 @@
 - indicar as datas da entrega dos exercºicioos
 - incluir os sinais de dedução
 - encontrar o simbolo para a negação de um conjunto
+- resolver o problema da paginação dos números
+- Resolve o problema na numeracao de exemplos e definições

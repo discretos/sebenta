@@ -1,9 +1,17 @@
-\chapter*{Exercícios - Lógica formal}
+\chapter*{Exercícios do Capítulo \ref{cap:logicaformal}}
 %%1
 
-\section*{Proposições}
-
 \begin{enumerate}
+  	\item Quais das seguintes frases são proposições?
+  	\begin{enumerate}
+	  	\item A lua é feita de queijo verde.
+	  	\item Ele é certamente, um homem alto.
+	  	\item Dois é um número primo.
+	  	\item O jovo vai acabar logo?
+	  	\item Os juros vão subir ano que vem.
+	  	\item Os juro vão descer ano que vem.
+	  	\item $x^2 - 4 = 0.$
+  	\end{enumerate}
   	\item Qual das seguintes sentenças é uma proposição? Quais são os valores de verdade para as que são proposições?
   	\begin{enumerate}
 	  	  \item Lisboa é a capital do Brasil.
@@ -70,11 +78,7 @@
 	verdade quando $p, q$ e $r$ possuem os mesmos valores de verdade e falso em caso contrário.
 	\item O soba de uma vila diz que existe um barbeiro numa outra vila muito distante, que apenas faz a barba à pessoas
 	e somente à pessoas que não fazem a barba por sí próprias. Será que este barbeiro existe?
-\end{enumerate}
 
-\section*{Lógica proposicional}
-
-\begin{enumerate}
 	 \item Utiliza a lei de DeMorgan para encontrar a negação para cada uma das seguintes sentenças.
 	 \begin{enumerate}
 	   	\item O Ndongala vai procurar um emprego ou terminar a licenciatura.
@@ -89,13 +93,36 @@
 	\item Mostre que $(p \to q) \land (q \to r) \to (p \to r)$ é uma tautologia
 	\item Encontre uma proposição composta involvendo as variáveis $p, q$ e $r$ que seja verdadeira quando $p$ e $q$ são 
 	verdadeiros e $r$ é falso, mas que seja falso em caso contrário.
-	\item Encontre uma proposição composta logicamente equivalente a $p \to q$ utilizando apenas o operador $\downarrow$
-\end{enumerate}
+	\item Encontre uma proposição composta lógicamente equivalente a $p \to q$
+	utilizando apenas o operador $\downarrow$.
+	\begin{description}
+	\item[Nota:] O símbolo $\downarrow$ representa o operador $NOR$ (ou negação do
+	operador $\lor$).
+	A proposição $p$ $NOR$ $q$ é verdadeira quando ambos $p$ e $q$ são falsos, e
+	falsa em caso contrário.
+	\end{description}
+	\item Demonstre que as seguintes proposições são logicamente equivalentes
+	\begin{enumerate}
+		\item $p \leftrightarrow q$ e $(p \land q) \lor (\lnot p \land \lnot q)$
+		\item $\lnot (p \leftrightarrow q)$ e $p \leftrightarrow \lnot q$
+		\item $p \to q) \land (p \to r)$ e $p \to (q \land r)$
+	\end{enumerate}
 
+  	\item Cada habitante de uma vila remota sempre diz a verdade ou mente. Um
+  habitante desta vila irá apenas responder com ``Sim'' ou ``Não'' a uma
+  pergunta feita por um turista. Imagine que és um turista em visita a esta
+  cidade e encontras um ponto onde a estrada divide-se em dois caminhos: um que
+  leva para o teu destino e outra que leva para uma floresta perigosa. Um
+  habitante da vila está mesmo ao lado do ponto da estrada em que te encontras.
+  Qual é pergunta que deves fazer a este habitante para obteres a resposta que
+  desejas sobre o caminho a tomar para chegar ao teu destino?
+  	\item Ao planear uma festa pretendes identificar a quem convidar. No grupo de
+  amigos que queres convidar, existem três amigos esquisitos. Sabes que se a
+  Joana for, ela não vai ficar contente se o Samuel for. Samuel irá a festa
+  apenas se a Katia também for e a Kátia não irá a festa ao menos que Joana
+  também não vá. Entre estes três amigos quais deves convidar para garantir que
+  ninguém fique infeliz.
 
-\section*{Predicados e quantificadores}
-
-\begin{enumerate}
   	\item Seja $P(x)$ a expressão ``a palavra $x$ contém a letra $a$''. Quais são os valores de verdade para?
   	\begin{enumerate}
     	\item $P(laranja)$ \item $P(limão)$ \item $P(verdade)$ \item $P(dificil)$ \item $P(falso)$
@@ -152,9 +179,62 @@
 	  \item Tudo está no sítio certo e em perfeitas condições.
 	\end{enumerate}
 	
-	\item Determine se $\forall x(P(x) \to Q(x))$ e $\forall xP(x) \to \forall xQ(x)$ são lógicamente equivalentes. Justifique
-	a sua resposta.
+	\item Determine se $\forall x(P(x) \to Q(x))$ e $\forall xP(x) \to \forall
+	xQ(x)$ são lógicamente equivalentes. Justifique a sua resposta.
+	\item Seja $G(x)$ a expressão ``$x$ possui um gato'', seja $C(x)$ a expressão
+	``$x$ possui um cão'' e seja $F(x)$ a expressão ``$x$ possui um furão''.
+	Expresse cada uma das seguintes sentenças em termos de $G(x), C(x), F(x)$,
+	quantificadores e conectores lógicos. O domínio é o conjuntos dos estudantes da
+	tua sala.
+	\begin{enumerate}
+		\item Um estudante na tua sala possui um gato, um cão e um furão.
+		\item Todos os estudantes na tua sala possuem um gato, um cão ou um furão.
+		\item Alguns estudantes na tua sala possuem um gato e um furão, mas não
+		possuem um cão.
+		\item Nenhum estudante na tua sala possui um gato, um cão e um furão.
+	\end{enumerate}
+	\item Seja $P(x)$ a sentença ``$x = x^2$.'' Se o domínio consiste dos números
+	inteiros, qual é o valor lógico das seguintes expressões:
+	\begin{enumerate}
+		\item $P(0)$\item $P(1)$\item $P(2)$\item $P(-1)$\item$\exists
+		xP(x)$\item$\forall P(x)$
+	\end{enumerate}
+	\item Traduza cada uma das seguintes sentenças em expressões lógicas utilizando
+	predicados, quantificadores e conectores lógicos.
+	\begin{enumerate}
+		\item Ninguém é perfeito.
+		\item Todos os teus amigos são perfeitos.
+		\item Pelo menos um dos teus amigos é perfeito.
+		\item Todos são teus amigos e são perfeitos.
+	\end{enumerate}
+	\item Seja $Q(x,y)$ a sentença ``$x$ enviou um email a $y$'', onde o domínio de
+	$x$ e $y$ consiste em todos os estudantes da tua sala. Expresse cada uma das
+	seguintes quantificações em Português.
+	\begin{enumerate}
+		\item $\exists x\exists yQ(x,y)$
+		\item $\exists x\forall yQ(x,y)$
+		\item $\forall x\exists yQ(x,y)$
+		\item $\exists y\forall xQ(x,y)$
+	\end{enumerate}
+	\item Encontre um contra-exemplo, quando possível, para estas quantificações
+	universais, onde o domínio das variáveis consiste no conjunto dos números
+	inteiros.
+	\begin{enumerate}
+	  \item $\forall x\exists y(x = 1/y)$
+	  \item $\forall x\exists y(y^2 - x < 100)$
+	  \item $\forall x\forall y(x^2 \centernot{=} y^3)$
+  	\end{enumerate}
 \end{enumerate}
 
-\vspace*{2em}
-\begin{center}\textbf{Continua!!! (Lógica de predicados e Demonstrações)}\end{center}
+\newpage
+\section*{Exercícios com Programação}
+
+Escreva programas de computador com as entradas e saídas especificadas.
+\begin{enumerate}
+  \item Dado os valores lógicos das proposições $p$ e $q$, encontre os valores
+  lógicos da conjunção, disjunção inclusiva, disjunção exclusiva, condicional e
+  a bicondicional destas proposições.
+  \item Dada uma proposição composta, determinar se é satisfazível por verificar
+  os seus valores lógicos para todos as atribuições positivas de valores lógicos
+  às suas variáveis proposicionais.
+\end{enumerate}

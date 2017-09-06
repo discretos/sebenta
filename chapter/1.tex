@@ -1285,6 +1285,55 @@ proposicional $P(x)$ porque existem não existe nenhum elemento $x$ no domínio
 para o qual $P(x)$ é falso.
 \end{description}
 
+Para além de ``para todos'' e ``para cada'', a quantificação universal pode ser
+expressa em muitas formas, incluíndo ``todos os'', ``dado qualquer'', ``para
+arbitrários'', etc.
+
+Uma sentença $\forall xP(x)$ é falsa, onde $P(x)$ é uma função proposicional, se
+e somente se $P(x)$ não é sempre verdadeira quando $x$ está (ou existe) no
+domínio. Uma forma de mostrar que $P(x)$ não é sempre verdadeira quando $x$ está
+no domínio é por encontrar um contra-exemplo para a sentença $\forall xP(x)$.
+Note que um único contra-exemplo é tudo o que se precisa para estabelecer que
+$\forall xP(x)$ é falso. O exemplo \ref{exem134} ilustra como contra-exemplos
+são utilizados.
+
+\begin{exmp}
+\label{exem134}
+Seja $Q(x)$ a sentença ``$x < 2$''. Qual é o valor lógico da quantificação
+$\forall xQ(x)$, onde o domínio consiste em todos os números reais?
+\end{exmp}
+\begin{description}
+\item[Solução:] $Q(x)$ não é verdadeiro para todo o número real $x$, porque, por
+exemplo, $Q(3)$ é falso. Isto é, $x=3$ é um contra-exemplo para a sentença
+$\forall xQ(x)$. Assim, $\forall xQ(x)$ é falso.
+\end{description}
+
+\begin{exmp}
+\label{exem135}
+Suponha que $P(x)$ é ``$x^2 > 0$''. Para mostrar que a sentença $\forall xP(x)$
+é falso onde o universo de discurso consiste em todos os números inteiros, damos
+um contra-exemplo. Vemos que $x = 0$ é um contra-exemplo porque $x^2 = 0$ onde
+$x = 0$, tal que $x^2$ não é maior que $0$ onde $x=0$.
+\end{exmp}
+
+Procurar por contra-exemplos para sentença quantificadas universalmente é uma
+actividade importante no estudo da matemática, como veremos em secções futuras
+neste manual.
+
+Quando todos os elementos no domínio podem ser lista - por exemplo, $x_1, x_2,
+\ldots, x_n$ - procede que a quantificação universal $\forall xP(x)$ é a mesma
+que a conjunção,
+\begin{center}
+$P(x_1) \land P(x_2) \land \ldots \land P(x_n)$,
+\end{center}
+porque esta conjunção é verdadeira se e somente se $P(x_1),P(x_2),\ldots,P(x_n)$
+são todos verdadeiros.
+
+\begin{exmp}
+\label{exem136}
+Qual é o valor lógico de $\forall xP(x)$, onde $P(x)$ é a sentença ``$x^2 <
+10$'' e o domínio consiste nos inteiros positivos inferiores a 4?
+\end{exmp}
 
  \subsection*{\underline{Quantificadores com Domínios
 Restrictos}} \subsection*{\underline{Precedência de Quantificadores}}

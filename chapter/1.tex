@@ -1239,6 +1239,51 @@ domínio deve sempre ser especificado quando o quantificador universal é
 utilizado; sem isso, a quantificação universal de uma sentença é indefinida.
 \end{description}
 
+\begin{defn}
+\label{def19}
+A \emph{quantificação universal} de $P(x)$ é a sentença
+\begin{center}``$P(x)$ para todos os valores de $x$ no domínio.''\end{center}
+A notação $\forall xP(x)$ denota a quantificação universal de $P(x)$. Aqui,
+$\forall$ é chamado de \textbf{quantificador universal}. Lemos $\forall xP(x)$
+como ``para todo $xP(x)$'' ou ``para qualquer $xP(x)$''. Um elemento para o qual
+$P(x)$ é falso é chamado de \textbf{contra-exemplo} de $\forall xP(x)$.
+\end{defn}
+
+O significado do quantificador universal é sumarizado na primeira linha da
+Tabela \ref{tabela:127}. Ilustramos a utilização do quantificador universal nos
+exemplos a seguir.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|}%
+\toprule
+\textbf{\emph{Sentença}} & \textbf{\emph{Quando é Verdadeiro?}} &
+\textbf{\emph{Quando é Falso?}}\\
+\midrule
+$\forall xP(x)$ & $P(x)$ é V para todo $x$	& Existe um $x$ para o
+qual $P(x)$ é F.\\
+$\exists xP(x)$ & Existe um $x$ para o qual $P(x)$ é V & $P(x)$ é F
+para todo $x$\\
+\bottomrule%
+\end{tabular}%
+\caption{Quantificadores}
+\label{tabela:127}
+\end{table}
+
+\begin{exmp}
+\label{exem133}
+Seja $P(x)$ e sentença ``$x + 1>x$''. Qual é o valor lógico da quantificação
+$\forall xP(x)$, onde o domínio consiste em todos os números reais?
+\end{exmp}
+\begin{description}
+\item[Solução:] Como $P(x)$ é verdadeiro para todos os números reais $x$, a
+quantificação $\forall xP(x)$ é verdadeira.
+\item[Nota:] Geralmente, uma assumpção implícita é feita de tal forma que todos
+os domínios de discurso para os quantificadores não-vazios. Note que se o
+domínio é vazio, então $\forall xP(x)$ é verdadeiro para qualquer função
+proposicional $P(x)$ porque existem não existe nenhum elemento $x$ no domínio
+para o qual $P(x)$ é falso.
+\end{description}
 
 
  \subsection*{\underline{Quantificadores com Domínios

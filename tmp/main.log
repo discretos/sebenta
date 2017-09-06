@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (MiKTeX 2.9.6350 64-bit)  (format=lualatex 2017.9.4)  6 SEP 2017 10:34
+This is LuaTeX, Version 1.0.4 (MiKTeX 2.9.6350 64-bit)  (format=lualatex 2017.9.4)  6 SEP 2017 11:32
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.445 seconds
+luaotfload | main : initialization completed in 0.456 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 ("C:/Program Files/MiKTeX 2.9/tex/latex/base/report.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
@@ -1217,25 +1217,32 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1227.
 [23]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1251.
+Overfull \hbox (37.43983pt too wide) in paragraph at lines 1258--1269
+ [][][] 
+ []
 
-Overfull \hbox (97.08577pt too wide) in paragraph at lines 1256--1256
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1286.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1286.
+[24
+warning  (pdf backend): ignoring duplicate destination with the name 'table.1.3.
+1'
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1296.
+
+Overfull \hbox (97.08577pt too wide) in paragraph at lines 1301--1301
 [][]$[]$ 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1260.
+(babel)             in language  on input line 1305.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1261.
+(babel)             in language  on input line 1306.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1262.
+(babel)             in language  on input line 1307.
 ) (./chapter/1exercicios.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
- [24]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
@@ -1457,7 +1464,7 @@ Package babel Info: Redefining portuges shorthand "|
 [40]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 430.
- <chapter/imagens/31.png, id=688, 87.70265pt x 48.18pt>
+ <chapter/imagens/31.png, id=693, 87.70265pt x 48.18pt>
 File: chapter/imagens/31.png Graphic file (type png)
 
 <use chapter/imagens/31.png>
@@ -1483,7 +1490,7 @@ Package babel Info: Redefining portuges shorthand "|
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3.1
 '
 <./chapter/imagens/31.png>]
-<chapter/imagens/32.png, id=701, 71.8936pt x 38.76984pt>
+<chapter/imagens/32.png, id=706, 71.8936pt x 38.76984pt>
 File: chapter/imagens/32.png Graphic file (type png)
 
 <use chapter/imagens/32.png>
@@ -1497,14 +1504,14 @@ Package babel Info: Redefining portuges shorthand "|
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3.2
 '
 <./chapter/imagens/32.png>]
-<chapter/imagens/33.png, id=715, 77.16328pt x 46.67438pt>
+<chapter/imagens/33.png, id=720, 77.16328pt x 46.67438pt>
 File: chapter/imagens/33.png Graphic file (type png)
 
 <use chapter/imagens/33.png>
 Package luatex.def Info: chapter/imagens/33.png used on input line 555.
 (luatex.def)             Requested size: 154.32614pt x 93.34848pt.
 
-<chapter/imagens/34.png, id=717, 78.6689pt x 47.42719pt>
+<chapter/imagens/34.png, id=722, 78.6689pt x 47.42719pt>
 File: chapter/imagens/34.png Graphic file (type png)
 
 <use chapter/imagens/34.png>
@@ -1547,7 +1554,7 @@ Package babel Info: Redefining portuges shorthand "|
  [46
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3.5
 '
-] <chapter/imagens/36.png, id=761, 132.495pt x 48.55641pt>
+] <chapter/imagens/36.png, id=766, 132.495pt x 48.55641pt>
 File: chapter/imagens/36.png Graphic file (type png)
 
 <use chapter/imagens/36.png>
@@ -1689,7 +1696,7 @@ n/10 (2\OML/cmm/m/it/10 ; b\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g$
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 62.
-<chapter/imagens/41.png, id=913, 75.65765pt x 40.65187pt>
+<chapter/imagens/41.png, id=918, 75.65765pt x 40.65187pt>
 File: chapter/imagens/41.png Graphic file (type png)
 
 <use chapter/imagens/41.png>
@@ -1737,7 +1744,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 406.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 406.
-[61] <chapter/imagens/62.png, id=969, 337.26pt x 135.50626pt>
+[61] <chapter/imagens/62.png, id=974, 337.26pt x 135.50626pt>
 File: chapter/imagens/62.png Graphic file (type png)
 
 <use chapter/imagens/62.png>
@@ -1753,7 +1760,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'figure.4.2
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 499.
- <chapter/imagens/63.png, id=981, 177.66376pt x 190.7125pt>
+ <chapter/imagens/63.png, id=986, 177.66376pt x 190.7125pt>
 File: chapter/imagens/63.png Graphic file (type png)
 
 <use chapter/imagens/63.png>
@@ -1767,14 +1774,14 @@ Package babel Info: Redefining portuges shorthand "|
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.4.3
 '
 <./chapter/imagens/62.png>]
-<chapter/imagens/64.png, id=993, 186.6975pt x 195.73125pt>
+<chapter/imagens/64.png, id=998, 186.6975pt x 195.73125pt>
 File: chapter/imagens/64.png Graphic file (type png)
 
 <use chapter/imagens/64.png>
 Package luatex.def Info: chapter/imagens/64.png used on input line 560.
 (luatex.def)             Requested size: 112.01935pt x 117.43964pt.
 
-<chapter/imagens/65.png, id=996, 168.63pt x 183.68625pt>
+<chapter/imagens/65.png, id=1001, 168.63pt x 183.68625pt>
 File: chapter/imagens/65.png Graphic file (type png)
 
 <use chapter/imagens/65.png>
@@ -1831,14 +1838,14 @@ l.579 ..., (2, 3), (3, 1), (3, 3), (4, 1), (4, 3)}\]
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-<chapter/imagens/66.png, id=1012, 210.7875pt x 195.73125pt>
+<chapter/imagens/66.png, id=1017, 210.7875pt x 195.73125pt>
 File: chapter/imagens/66.png Graphic file (type png)
 
 <use chapter/imagens/66.png>
 Package luatex.def Info: chapter/imagens/66.png used on input line 608.
 (luatex.def)             Requested size: 126.47346pt x 117.43964pt.
 
-<chapter/imagens/67.png, id=1013, 188.705pt x 180.675pt>
+<chapter/imagens/67.png, id=1018, 188.705pt x 180.675pt>
 File: chapter/imagens/67.png Graphic file (type png)
 
 <use chapter/imagens/67.png>
@@ -1891,7 +1898,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 48.
 [68
 
-] <chapter/imagens/51.png, id=1062, 285.69234pt x 76.03406pt>
+] <chapter/imagens/51.png, id=1067, 285.69234pt x 76.03406pt>
 File: chapter/imagens/51.png Graphic file (type png)
 
 <use chapter/imagens/51.png>
@@ -1901,7 +1908,7 @@ Package luatex.def Info: chapter/imagens/51.png used on input line 57.
 
 LaTeX Warning: Reference `sec:107' on page 69 undefined on input line 72.
 
-<chapter/imagens/52.png, id=1064, 321.07452pt x 89.96109pt>
+<chapter/imagens/52.png, id=1069, 321.07452pt x 89.96109pt>
 File: chapter/imagens/52.png Graphic file (type png)
 
 <use chapter/imagens/52.png>
@@ -1915,7 +1922,7 @@ Package babel Info: Redefining portuges shorthand "|
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.5.1
 '
 <./chapter/imagens/51.png>]
-<chapter/imagens/53.png, id=1074, 320.32172pt x 116.30952pt>
+<chapter/imagens/53.png, id=1079, 320.32172pt x 116.30952pt>
 File: chapter/imagens/53.png Graphic file (type png)
 
 <use chapter/imagens/53.png>
@@ -1974,13 +1981,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
 )
 
 Here is how much of LuaTeX's memory you used:
- 24928 strings out of 494481
+ 24934 strings out of 494481
  100000,662416 words of node,token memory allocated
  517 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 5 glue, 1 kern, 13 attribute, 54 glue_spec, 13 attr
 ibute_list, 1 write nodes
-   avail lists: 2:1299,3:422,4:70,5:374,6:3267,7:1573,8:239,9:256,10:24,11:436
- 27332 multiletter control sequences out of 65536+200000
+   avail lists: 2:1299,3:422,4:70,5:375,6:3267,7:1573,8:239,9:256,10:24,11:436
+ 27335 multiletter control sequences out of 65536+200000
  83 fonts using 5435783 bytes
  62i,16n,71p,460b,681s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKT
@@ -2002,9 +2009,9 @@ s/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
 mtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on main.pdf (73 pages, 804662 bytes).
+Output written on main.pdf (73 pages, 809706 bytes).
 
-PDF statistics: 1188 PDF objects out of 1200 (max. 8388607)
- 581 named destinations out of 1000 (max. 131072)
+PDF statistics: 1193 PDF objects out of 1200 (max. 8388607)
+ 584 named destinations out of 1000 (max. 131072)
  264 words of extra memory for PDF output out of 10000 (max. 100000000)
 

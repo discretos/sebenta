@@ -1015,7 +1015,7 @@ determinar se uma proposição composta é satisfazíl, geralmente é mais efici
 não utilizar uma, tal como indica o exemplo \ref{exem28}.
 
 \begin{exmp}
-\label{exem28}
+\label{exem127}
 Determine se cada uma das proposições compostas $(p \lor \lnot q) \land (q \lor
 \lnot r) \land (r \lor \lnot p)$, $(p \lor q \lor r) \land (\lnot p \lor \lnot q
 \lor \lnot r)$ e $(p \lor \lnot q) \land (q \lor \lnot r) \land (r \lor \lnot p)
@@ -1118,9 +1118,131 @@ também chamada de o valor da \textbf{função proposicional} $P$ em $x$. Quando
 valor é atribuído à variável $x$, a sentença $P(x)$ torna-se numa proposição e
 possui um valor lógico. Considere os exemplos a seguir.
  
+\begin{exmp}
+\label{exem128}
+Seja $P(x)$ a sentença ``$x>3$''. Quais são os valores lógicos de $P(4)$ e
+$P(2))$
+\end{exmp}
+\begin{description}
+\item[Solução:] Obtemos a sentença $P(4)$ por definir $x=4$ na sentença
+``$x>3$''. Assim, $P(4)$, que é a sentença ``$4 > 3$'', é verdadeira. No
+entanto, $P(2)$, que é a sentença ``$2>3$'', é falsa.	
+\end{description}
+
+\begin{exmp}
+\label{exem129}
+Seja $A(x)$ a sentença ``O computador $x$ está sob ataque''. Suponha que dos
+computadores no campus, apenas os computadores CS2 e MAT1 estão sob ataque de
+momento. Quais serão os valores lógicos de $A(CS1)$, $A(CS2)$ e $A(MAT1)$?
+\end{exmp}
+\begin{description}
+\item[Solução:] Obtemos a sentença $A(CS1)$ por definir $x = CS1$ na
+sentença ``O computador $x$ está sob ataque''. Como o computador CS1 não
+está na lista de computadores actualmente sob ataque, concluímos que
+$A(CS1)$ é falso. Similarmente, como CS2 e MAT1 estão na lista de
+computadores sob ataque, sabemos que $A(CS2)$ e $A(MAT1)$ são
+verdadeiros.
+\end{description}
+
+Podemos ter também sentenças que envolvam mais de uma variável. Por exemplo,
+considere a sentença ``$x = y + 3$''. Podemos denotar esta sentença por
+$Q(x,y)$, onde $x$ e $y$ são variáveis e $Q$ é o predicado. Quando os valores de
+$x$ e $y$ são atribuidos, a sentença $Q(x,y)$ possui um valor lógico.
+
+\begin{exmp}
+\label{exem130}
+Seja $Q(x,y)$, que denota a sentença ``$x = y + 3$''. Quais são os valores
+lógicos das proposições $Q(1,2)$ e $Q(3,0)$?
+\end{exmp}
+\begin{description}
+\item[Solução:] Para obter $Q(1,2)$, definimos $x = 1$ e $y = 2$ na sentença
+$Q(x,y)$. Assim, $Q(1,2)$ é a sentença ``$1=2+3$'', que é falsa. A sentença
+$Q(3,0)$ é a proposição ``$3 = 0+3$'', que é verdadeira.
+\end{description}
+
+De forma similiar, podemos ter $R(x,y,z)$ a denotar a sentença ``$x + y = z$''.
+Quando valores são atribuidos às variáveis $x,y$ e $z$, esta sentença possuirá
+um valor lógico.
+
+\begin{exmp}
+\label{exem131}
+Quais são os valores lógicos das proposições $R(1,2,3)$ e $R(0,0,1)$?
+\end{exmp}
+\begin{description}
+\item[Solução:] A proposição $R(1,2,3)$ é obtida por definir $x=1, y=2$ e $z=3$
+na sentença $R(x,y,z)$. Vemos que $R(1,2,3)$ é a sentença ``$1 + 2 = 3$'', que é
+verdadeira. Também notamos que $R(0,0,1)$, que é a sentença ``$0+0=1$'', é
+falsa.
+\end{description}
+
+No geral, uma sentença envolvendo as $n$ variáveis $x_1, x_2, \ldots, x_n$ pode
+ser denotada por 
+\begin{center}$P(x_1, x_2, \ldots, x_n)$\end{center}
+
+Uma sentença da forma $P(x_1, x_2, \ldots, x_n)$ é o valor da \textbf{função
+proposicional} $P$ na $n$-tupla $(x_1, x_2, \ldots, x_n)$, e $P$ é também
+chamado de \textbf{predicado $n$-ário}. Funções proposicionais ocorrem em
+programas de computador, como o exemplo \ref{exem132} ilustra.
+
+\begin{exmp}
+\label{exem132}
+Considere a sentença
+\begin{center} \textbf{se} $x > 0$ \textbf{então} $x := x + 1$.\end{center}
+Quando esta sentença é encontrada num programa, o valor da variável $x$ naquele
+ponto de execução do programa é inserida em $P(x)$, que é ``$x>0$''. Se $P(x)$
+for verdadeiro para este valor de $x$, a sentença $x := x + 1$ será executada,
+de formas a acrescentar o valor de $x$ em 1. Se $P(x)$ for falso para este valor
+de $x$, a sentença $x := x + 1$ não será executada e o valor de $x$ não será
+alterado.
+\end{exmp}
+
+\begin{description}
+\item[PRÉCONDIÇÕES E PÓSCONDIÇÕES] Predicados também são utilizados para
+estabelecer a correção de programas de computador, isto é, para verificar que
+programas de computador produzem sempre a saída desejada quando fornecido uma
+entrada válida. (Note que ao menos que a correção de um programa é
+estabelecida, nenhuma quantidade de testes pode mostrar que o mesmo produz a
+saída desejada para todos os valores de entrada, ao menos que todos os valores
+de entrada são testados.) As sentenças que descrevem entradas válidas são
+conhecidos como \textbf{precondições} e as condições que as saídas devem
+satisfazer quando o programa é executado são chamadas de
+\textbf{póscondições}.
+\end{description}
+
+
 \subsection*{\underline{Quantificadores}}
-\subsection*{\underline{Quantificadores com Domínios Restrictos}}
-\subsection*{\underline{Precedência de Quantificadores}}
+
+Quando são atribuídos valores às variáveis de uma função proposicional, a
+sentença resultante se torna numa proposição com um certo valor lógico. No
+entanto, existe uma outra forma importante, chamada de \textbf{quantificação},
+para criar uma proposição de uma função proposicional. A quantificação expressa
+a extensão na qual o predicado é verdadeiro num conjunto de elementos. Em
+português, as palavras \textbf{todos, alguns, muitos, nenhum} e outras, são
+usadas em quantificações. Iremos focar-nos em dois tipos de quantificação:
+quantificação universal, que nos diz que um predicado é verdadeiro para todos os
+elementos sob consideração, e quantificação existêncial, que nos diz que existe
+um ou mais elementos sob consideração para os quais o predicado é verdadeiro. A
+área da lógica que trata dos predicados e quantificadores é chamada de
+\textbf{cálculo de predicados} ou \textbf{lógica de predicados}.
+
+\begin{description}
+\item[O QUANTIFICADOR UNIVERSAL] Muitas sentenças matemáticas afirmam que uma
+propriedade é verdadeira para todos os valores de uma variável num
+particular domínio, chamado de \textbf{domínio de discuro} (ou
+\textbf{universo de discurso}, geralmente referido apenas como
+\textbf{domínio}. Tal sentença é expressa utilizando quantificação
+universal. A quantificação universal de $P(x)$ para um particular domínio é a
+proposição que asserta que $P(x)$ é verdadeira para todos os valores de $x$ no
+domínio. Note que o domínio especifica os valores possíves de $x$. O significado
+do quantificador universal de $P(x)$ altera quando alteramos o domínio. O
+domínio deve sempre ser especificado quando o quantificador universal é
+utilizado; sem isso, a quantificação universal de uma sentença é indefinida.
+\end{description}
+
+
+
+ \subsection*{\underline{Quantificadores com Domínios
+Restrictos}} \subsection*{\underline{Precedência de Quantificadores}}
 \subsection*{\underline{Variáveis Ligadas}}
 \subsection*{\underline{Equivalência Lógicas Involvendo Quantificadores}}
 \subsection*{\underline{Negação de Expressões Quantificadas}}

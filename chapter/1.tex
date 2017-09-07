@@ -1334,8 +1334,71 @@ são todos verdadeiros.
 Qual é o valor lógico de $\forall xP(x)$, onde $P(x)$ é a sentença ``$x^2 <
 10$'' e o domínio consiste nos inteiros positivos inferiores a 4?
 \end{exmp}
+\begin{description}
+\item[Solução:] A sentença $\forall xP(x)$ é a mesma que a conjunção
+\begin{center}$P(1) \land P(2) \land P(3) \land P(4)$,\end{center}
+porque o domínio consiste nos inteiros 1, 2, 3 e 4. Como $P(4)$, que é a
+sentença ``$4^2 < 10$'', é falsa, segue-se que $\forall xP(x)$ é falsa.
+\end{description}
 
- \subsection*{\underline{Quantificadores com Domínios
+\begin{exmp}
+\label{exem137}
+Qual é o valor lógico de $\forall x(x^2 \geq x)$ se o domínio consiste em todos
+os números reais? Qual é o valor lógico desta sentença de o domínio consiste em
+todos os números inteiros?
+\begin{description}
+\item[Solução:] A quantificação universal $\forall x(x^2 \geq x)$, onde o
+domínio consiste em todos os números reais, é falsa. Por exemplo,
+$(\frac{1}{2})^2 \not{\geq} \frac{1}{2}$. Note que $x^2 \geq x$ se e somente se
+$x^2 - x = x(x-1) \geq 0$. Consequentemente, $x^2 \geq x$ se e somente se
+$x\leq0$ ou $x\geq1$. Procede que $\forall x(x^2\geq x)$ é falso se o domínio
+consiste em todos os números reais (porque a inequalidade é falsa para os todos
+os números reais $x$ com $0<x<1$). No entanto, se o domínio consiste nos números
+inteiros, $\forall x(x^2 \geq x)$ é verdadeiro, porque não existe nenhum inteiro
+$x$ tal que $0<x<1$.
+\end{description}
+\end{exmp}
+
+\begin{description}
+\item[O QUANTIFICADOR EXISTÊNCIAL] Muitas sentenças matemáticas afirmam que
+existe um elemento com uma certa propriedade. Tais sentenças são expressas
+utilizando a quantificação existêncial. Com a quantificação existêncial,
+formamos uma proposição que é verdadeira se e somente se $P(x)$ é verdadeira
+para pelo menos um valor de $x$ no domínio.
+\end{description}
+
+\begin{defn}
+\label{def20}
+A \emph{quantificação existêncial} de $P(x)$ é a sentença
+\begin{center}
+``Exite um elemento $x$ no domínio tal que $P(x)$.''
+\end{center} 
+Utilizamos a notação $\exists xP(x)$ para a quantificação existêncial de $P(x)$.
+Aqui, $\exists$ é chamado de \textbf{quantificador existêncial}.
+\end{defn}
+
+Um domínio deve sempre ser especificado quando uma sentença $\exists xP(x)$ é
+utilizada. Além disso, o significado de $\exists xP(x)$ altera quando o domínio
+altera. Sem a especificação do domínio, a sentença $\exists xP(x)$ não tem
+significado algum.
+
+Além da frase ``existe'', também podemos expressar a quantificação existêncial
+de outras formas, tais como utilizando as palavras ``para algum'', ``para pelo
+menos um'' ou ``existe um''. A quantificação existêncial $\exists xP(x)$ é lida
+como
+\begin{center}
+``Existe um $x$ tal que $P(x)$''\\
+``Existe pelo menos um $x$ tal que $P(x)$''
+\end{center}
+ou
+\begin{center}
+``Para algum $xP(x)$''.
+\end{center}
+
+O significado da quantificador existêncial é sumarizado na segunda linha da
+Tabela \ref{tabela:127}. Ilustramos a sua utilização com os exemplos a seguir.
+
+\subsection*{\underline{Quantificadores com Domínios
 Restrictos}} \subsection*{\underline{Precedência de Quantificadores}}
 \subsection*{\underline{Variáveis Ligadas}}
 \subsection*{\underline{Equivalência Lógicas Involvendo Quantificadores}}

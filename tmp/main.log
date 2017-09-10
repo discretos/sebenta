@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (MiKTeX 2.9.6350 64-bit)  (format=lualatex 2017.9.4)  10 SEP 2017 20:35
+This is LuaTeX, Version 1.0.4 (MiKTeX 2.9.6350 64-bit)  (format=lualatex 2017.9.4)  10 SEP 2017 21:11
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.712 seconds
+luaotfload | main : initialization completed in 0.631 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 ("C:/Program Files/MiKTeX 2.9/tex/latex/base/report.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
@@ -1260,24 +1260,24 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1490.
+(babel)             in language  on input line 1496.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1496.
+[27]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1510.
 
-Overfull \hbox (97.08577pt too wide) in paragraph at lines 1495--1495
+Overfull \hbox (97.08577pt too wide) in paragraph at lines 1515--1515
 [][]$[]$ 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1499.
+(babel)             in language  on input line 1519.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1500.
+(babel)             in language  on input line 1520.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1501.
+(babel)             in language  on input line 1521.
 ) (./chapter/1exercicios.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
- [27]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
@@ -2044,7 +2044,7 @@ s/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
 mtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on main.pdf (76 pages, 824920 bytes).
+Output written on main.pdf (76 pages, 826641 bytes).
 
 PDF statistics: 1218 PDF objects out of 1440 (max. 8388607)
  595 named destinations out of 1000 (max. 131072)

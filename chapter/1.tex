@@ -1398,6 +1398,88 @@ ou
 O significado da quantificador existêncial é sumarizado na segunda linha da
 Tabela \ref{tabela:127}. Ilustramos a sua utilização com os exemplos a seguir.
 
+\begin{exmp}
+\label{exem138}
+Seja $P(x)$ a sentença ``$x>3$''. Qual é o valor lógico da quantificação
+$\exists xP(x)$, o domínio consiste em todos os números reais?
+\begin{description}
+\item[Solução:] Como ``$x>3$'' é verdadeiro em alguns casos - por exemplo,
+quando $x=4$ - a quantificação existêncial de $P(x)$, que é $\exists xP(x)$, é
+verdadeira.
+\end{description}
+\end{exmp}
+
+Note que a sentença $\exists xP(x)$ é falsa se e somente se não existe algum
+elemento $x$ no domínio para o qual $P$ é verdadeiro. Isto é, $\exists xP(x)$ é
+falso se e somente se $P(x)$ é falso para todo elemento no domínio. Ilustramos
+esta observação no exemplo \ref{exem139}.
+
+\begin{exmp}
+\label{exem139}
+Seja $Q(x)$ a sentença ``$x=x+1$''. Qual é o valor lógico da quantificação
+$\exists xQ(x)$, o domínio consiste em todos os números reais?
+\begin{description}
+\item[Solução:] Como ``$Q(x)$'' é falso para todo o número real $x$, a
+quantificação existêncial de $Q(x)$, que é $\exists xQ(x)$, é falsa.
+\end{description}
+\end{exmp}
+
+\begin{description}
+\item[Nota:] Geralmente, é feita uma suposição implíicita de que todos os
+domínios de discurso dos quantificadores são não-vazios. Se o domínio for vazio,
+então $\exists xQ(x)$ é falso sempre que $Q(x)$ é uma função proposicional
+porque quando o domínio é vazio, não pode existir um elemento $x$ no domínio
+para o qual $Q(x)$ é verdaderio.
+\end{description}
+
+Quando todos os elementos no domínio podem ser listados - digamos, $x_1, x_2,
+\ldots, x_n$ - a quantificação existêncial $\exists xP(x)$ é o mesmo que a
+disjunção
+
+\begin{center}
+$P(x_1) \lor P(x_2) \lor \ldots \lor P(x_n)$,
+\end{center}
+
+porque esta disjunção é verdadeira se e somente se pelo menos um entre $P(x_1),
+P(x_2), \ldots, P(x_n)$ é verdadeiro.
+
+\begin{exmp}
+\label{exem140}
+Qual é o valor lógico de $\exits xP(x)$, onde $P(x)$ é a sentença ``$x^2 > 10$''
+e o universo de discurso consiste nos inteiros positivos não superiores a 4?
+\begin{description}
+\item[Solução:]Como o domínio é $\{1,2,3,4\}$, a proposição $\exists xP(x)$ é o
+mesmo que a disjunção
+
+\begin{center}
+$P(1) \lor P(2) \lor P(3) \lor P(4)$.
+\end{center}
+
+Como $P(4)$, que é a sentença ``$4^2 > 10$'', é verdadeira, segue-se que
+$\exists xP(x)$ é verdadeira.
+\end{description}
+\end{exmp}
+
+Por vezes é útil pensar em termos de laços (ou \emph{loopings}) e pesquisa ao
+determinar o valor lógico de uma quantificação. Imagine que existam $n$
+objectos no domínio para a variável $x$. Para determinar se o valor de $\forall
+xP(x)$ é verdadeiro, podemos percorrer todos os $n$ valores de $x$ para
+verificar se $P(x)$ é sempre verdadeiro. Se encontrarmos um valor de $x$ +ara o
+qual $P(x)$ é falso, então demonstramos que $\forall xP(x)$ é falso. De outra
+forma, $\forall xP(x)$ seria verdadeiro. Para verificar se $\exists P(x)$ é
+verdadeiro, percorremos o laço por todos os $n$ valores de $x$ a procura de um
+valor para o qual $P(x)$ é verdadeiro. Se encontrarmos um, então $\exists
+xP(x)$. Se não encontrarmos tal $x$, então demonstramos que $\exists xP(x)$ é
+falso. (Note que este método de pesquisa não se aplica quando existe um número
+infinito de valores no domínio. No entanto, ainda é uma forma útil de pensar
+sobre os valores lógicos de quantificações.)
+
+\begin{description}
+\item[O QUANTIFICADOR DE SINGURALIDADE] Apresentamos anteriormente o
+quantificador universal e o quantificador existêncial. Estes são os
+quantificadores mais importantes em Mátemática e Ciência da Computaçãosa 
+\end{description}
+
 \subsection*{\underline{Quantificadores com Domínios
 Restrictos}} \subsection*{\underline{Precedência de Quantificadores}}
 \subsection*{\underline{Variáveis Ligadas}}

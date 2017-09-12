@@ -1497,13 +1497,47 @@ utilizadas.
 
 
 \subsection*{\underline{Quantificadores com Domínios
-Restrictos}} 
+Restrictos}}
 
+Uma notação abreviada é geralmente utilizada para restringir o domínio de um
+quantificador. Nesta notação, a condição que uma variável deve satisfazer é
+incluída após o quantificador. Isto é ilustrado no Exemplo \ref{exem141}. Iremos
+também descrever outras formas desta notação involvendo pertença de conjuntos na
+Secção \ref{sec3conjuntos}.
 
+\begin{exmp}
+\label{exem141}
+O que as sentenças $\forall_{x<0}(x^2 > 0)$, $\forall_{y \neq 0}(y^3 \neq 0)$ e
+$\exists_{z>0}(z^2 = 2)$ significam, onde o domínio em cada um desses casos
+consiste nos números reais?
+\begin{description}
+\item[Solução:] A sentença $\forall_{x<0}(x^2 > 0)$ diz que para todo o
+número real $x$ com $x<0$, $x^2>0$. Isto é, ``O quadrado de um número real
+negativo é positivo''. Esta sentença é a mesma que $\forall x(x<0 \to x^2>0)$.
+
+A sentença $\forall_{y \neq 0}(y^3 \neq 0)$ diz que para todo o número real
+$y$ com $y\neq0$, temos $y^3 \neq 0$. Isto é, ``O cubo de todo o número real
+não-negativo, é não-negativo''. Note que esta sentença é
+equivalente a $\forall y(y\neq0 \to y^3\neq0)$.
+
+Finalmnete, a sentença $\exists_{z>0}(z^2 = 2)$ diz que existe um número real
+$z$ com $z>0$ tal que $z^2=2$. Isto, diz que ``Existe uma raiz quadrada positiva
+de 2''. Esta sentença é equivalente a $\exists z(z>0 \land z^2=2)$.
+
+\end{description}
+\end{exmp}
 
 \subsection*{\underline{Precedência de Quantificadores}}
-\subsection*{\underline{Variáveis Ligadas}}
-\subsection*{\underline{Equivalência Lógicas Involvendo Quantificadores}}
+
+Os quantificadores $\forall$ e $\exists$ possuem precedência superior com
+relação a todos os operadores lógicos do cálculo proposicional. Por exemplo,
+$\forall xP(x) \lor Q(x)$ é a disjunção de $\forall xP(x)$ e $Q(x)$. Por outras
+palavras, isto significa $(\forall xP(x)) \lor Q(x)$ ao invés de $\forall
+x(P(x) \lor Q(x))$.
+
+
+
+\subsection*{\underline{Variáveis Ligadas}} \subsection*{\underline{Equivalência Lógicas Involvendo Quantificadores}}
 \subsection*{\underline{Negação de Expressões Quantificadas}}
 \subsection*{\underline{Tradução de Expressões Lógicas}}
 

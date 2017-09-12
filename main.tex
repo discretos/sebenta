@@ -1,5 +1,5 @@
 \documentclass[a4paper]{report}
-
+\usepackage[useregional]{datetime2}
 \usepackage[portuguese]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{inputenc}
@@ -9,6 +9,7 @@
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage[plainpages=false,unicode]{hyperref}
 \usepackage{tikz}
+
 \usetikzlibrary{calc, trees, positioning, arrows, fit, shapes}
 
 
@@ -45,10 +46,11 @@
 \parbox[b]{0.75\textwidth}{ % Paragraph box which restricts text to less than the width of the page
 
 {\noindent\Huge\bfseries Estruturas Discretas}\\[1\baselineskip] % Title
-{\large {\textbf{Programa da disciplina}}}\\[4\baselineskip] % Tagline or
+{\large {\textbf{Programa da disciplina}}}\\[0.5\baselineskip] % Tagline or
 % further description
+{\large {\textbf{Actualização de:} \DTMnow}}\\[6\baselineskip]
 {\Large \textsc{Dizando Norton}\\[1\baselineskip} % Author name
-{\large (dizando.norton@gmail.com)}
+%{\large (dizando.norton@gmail.com)}
 
 \vspace{0.5\textheight} % Whitespace between the title block and the publisher
 {\small \noindent {DEI - Ciência da Computação}}\\[\baselineskip] % Publisher

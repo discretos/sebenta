@@ -37,7 +37,7 @@ estudar alguns métodos de demonstração e estratégias para a construção de
 demonstrações.
 
 \section{Lógica proposicional}
-\label{sec:logicaproposicional}
+\label{sec1:lp}
 
 As regras da lógica fornecem significados às sentenças ou argumentos
 matemáticos. Estas regras são utilizadas para distinguir um argumento matemático
@@ -1368,7 +1368,7 @@ para pelo menos um valor de $x$ no domínio.
 \end{description}
 
 \begin{defn}
-\label{def20}
+\label{def110}
 A \emph{quantificação existêncial} de $P(x)$ é a sentença
 \begin{center}
 ``Exite um elemento $x$ no domínio tal que $P(x)$.''
@@ -1536,8 +1536,104 @@ palavras, isto significa $(\forall xP(x)) \lor Q(x)$ ao invés de $\forall
 x(P(x) \lor Q(x))$.
 
 
+\subsection*{\underline{Variáveis Ligadas}}
 
-\subsection*{\underline{Variáveis Ligadas}} \subsection*{\underline{Equivalência Lógicas Involvendo Quantificadores}}
+Quando um quantificador é utilizado na variável $x$, dizemos que esta ocorrência
+da variável é \textbf{ligada}. Uma ocorrência de uma variável que não é ligada
+por um quantificador ou definida para um valor particular é chamada de
+\textbf{livre}. Todas as variáveis que ocorrem numa função proposicional devem
+estar ligadas ou definidas para um valor particular de formas a torná-la numa
+proposição. Isto pode ser feito utilizando a combinação de quantificadores
+universais, existênciais e atribuição de valores.
+
+A parte da expressão lógica para o qual um quantificador é aplicado é chamada de
+\textbf{escopo} deste quantificador. Consequentemente, uma variável é livre se
+estiver fora do escopo de todos os quantificadores na fórmula que especifica
+esta variável.
+
+\begin{exmp}
+\label{exem142}
+Na sentença $\exists x(x+y=1)$, a variável $x$ é ligada pela quantificação
+existêncial $\exists x$, mas a variável $y$ é livre porque não está ligada ao
+quantificador e nenhum valor é atribuído à esta variável. Isto ilustra que na
+sentença $\exists x(x+y=1)$, $x$ é ligada, mas $y$ é livre.
+
+Na sentença $\exists x(P(x) \land Q(x)) \lor \forall xR(x)$, todas as variáveis
+são ligadas. O escopo do primeiro quantificador, $\exists x$, é a expressão
+$P(x) \land Q(x)$ porque $\exists x$ é aplicado apenas à $P(x) \land Q(x)$, e
+não ao resto da sentença. De forma similar, o escopo do segundo quantificador,
+$\forall x$, é a expressão $R(x)$. Isto é, o quantificador existêncial liga-se à
+variável $x$ em $P(x) \land Q(x)$ e o quantificador universal $\forall x$
+liga-se à variável $x$ em $R(x)$. Observe que poderíamos escrever a nossa
+sentença usando duas variáveis diferentes $x$ e $y$, como em $\exists x(P(x)
+\land Q(x)) \lor \forall yR(y)$, porque o escopo dos dois quantificadores não se
+sobrepõem. 
+\end{exmp} 
+
+
+\subsection*{\underline{Equivalências Lógicas Envolvendo Quantificadores}}
+
+Na Secção \ref{sec1:lp} introduzimos a noção de equivalências lógicas de
+proposições compostas. Podemos estender esta noção para expressões envolvendo
+predicados e quantificadores.
+
+\label{def111}
+\begin{defn}
+Sentenças envolvendo predicados e quantificadores são \emph{logicamente
+equivalentes} se e somente se as mesmas possuem o mesmo valor lógico
+independentemente de os predicados serem substituidos nestas nestas sentenças e
+independentemente do domínio de discurso das variáveis nestas funções
+proposicionais. Utilizamos a notação $S \equiv T$ para indicar que duas
+sentenças $S$ e $T$ envolvendo predicados e quantificadores são logicamente
+equivalentes.
+\end{defn}
+
+O Exemplo \ref{exem143} ilustra como provar que duas sentenças envolvendo
+quantificadores e predicados são logicamente equivalentes.
+
+\label{exem143}
+\begin{exmp}
+Mostre que $\forall x(P(x) \land Q(x))$ e $\forall xP(x) \land \forall xQ(x)$
+são lógicamente equivalentes (onde o mesmo domínio é utilizado ao longo da
+quantificação). Esta equivalência lógica mostra que podemos distribuir um
+quantificador universal sob uma conjunção. Além do mais, também podemos
+distribuir um quantificador existêncial sob uma disjunção. No entanto, não
+podemos distribuir um quantificador universal sob uma disjunção, nem podemos
+distribuir um quantificador existêncial sob uma conjunção.
+\end{exmp}
+
+\begin{description}
+\item[Solução] Para mostrar que estas sentenças são logicamente equivalentes,
+devemos mostrar que as mesmas possuem sempre o mesmo valor lógico,
+independentemente do que são os predicados $P$ e $Q$, e independentemente do
+domínio de discurso utilizado. Suponha que temos dois predicados $P$ e $Q$, com
+o mesmo domínio. Podemos mostrar que $\forall x(P(x) \land Q(x))$ e $\forall
+xP(x) \land \forall xQ(x)$ são logicamente equivalentes de duas formas.
+Primeiro, mostramos que se $\forall x(P(x) \land Q(x))$ é verdadeiro,
+então $\forall xP(x) \land \forall xQ(x)$ também é verdadeiro. Segundo,
+mostramos que se $\forall xP(x) \land \forall xQ(x)$ é verdadeiro, então
+$\forall x(P(x) \land Q(x))$ também é.
+
+Então, suponha que $\forall x(P(x) \land Q(x))$. Isto significa que se $a$ no
+domínio, então $P(a) \land Q(a)$ é verdadeiro. Assim, $P(a)$ é verdadeiro e
+$Q(a)$ é verdadeiro. Como $P(a)$ e $Q(a)$ são verdadeiros para todos os
+elementos no domínio, podemos concluir que $\forall xP(x)$ e $\forall xQ(x)$ são
+ambos verdadeiros. Isto significa que $\forall xP(x) \land \forall xQ(x)$ é
+verdadeiro.
+
+A seguir, suponha que $\forall xP(x) \land \forall xQ(x)$ é verdadeiro. Segue-se
+que $\forall xP(x)$ e $\forall xQ(x)$ são verdadeiros. Assim, se $a$ está no
+domínio, então $P(a)$ é verdadeiro e $Q(a)$ é verdadeiro [como $P(x)$ e
+$Q(x)$ são ambos verdadeiros para todos os elementos no domínio, não existe
+conflito em usar o mesmo valor de $a$ aqui]. Segue-se que para todo $a$, $P(a)
+\land Q(a)$ é verdadeiro. Assim, $\forall x(P(x) \land Q(x))$ é verdadeiro.
+Podemos concluir que,
+\begin{center}
+$\forall x(P(x) \land Q(x)) \equiv \forall xP(x) \land \forall xQ(x).$
+\end{center}
+\end{description}
+
+
 \subsection*{\underline{Negação de Expressões Quantificadas}}
 \subsection*{\underline{Tradução de Expressões Lógicas}}
 

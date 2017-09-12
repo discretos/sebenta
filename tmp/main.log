@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (MiKTeX 2.9.6350 64-bit)  (format=lualatex 2017.9.4)  12 SEP 2017 14:11
+This is LuaTeX, Version 1.0.4 (MiKTeX 2.9.6350 64-bit)  (format=lualatex 2017.9.4)  12 SEP 2017 16:59
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.624 seconds
+luaotfload | main : initialization completed in 0.871 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 ("C:/Program Files/MiKTeX 2.9/tex/latex/base/report.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
@@ -1271,70 +1271,79 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1496.
 [27]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1544.
 
-Overfull \hbox (97.08577pt too wide) in paragraph at lines 1549--1549
+LaTeX Warning: Reference `sec3conjuntos' on page 28 undefined on input line 1506
+.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1560.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1560.
+[28]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1631.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1631.
+ [29]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1640.
+
+Overfull \hbox (97.08577pt too wide) in paragraph at lines 1645--1645
 [][]$[]$ 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1553.
+(babel)             in language  on input line 1649.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1554.
+(babel)             in language  on input line 1650.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1555.
+(babel)             in language  on input line 1651.
 ) (./chapter/1exercicios.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [28]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
- [29]
+ [30]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
- [30
+ [31
 
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 79.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 79.
- [31]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 125.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 125.
  [32]
-Missing character: There is no ã (U+00E3) in font cmmi10!
-Missing character: There is no ã (U+00E3) in font cmmi10!
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 125.
  [33]
+Missing character: There is no ã (U+00E3) in font cmmi10!
+Missing character: There is no ã (U+00E3) in font cmmi10!
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 153.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 153.
  [34]
 Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 198.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 198.
+ [35]
+Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 229.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 229.
- [35])
+ [36])
 (./chapter/2.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [36]
+ [37]
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
@@ -1343,14 +1352,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [37
+ [38
 
 ]) (./chapter/3.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [38
+ [39
 
 ]
 Cap\'{\i }tulo 3.
@@ -1362,14 +1371,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 51.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 51.
-[39
+[40
 
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 129.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 129.
- [40]
+ [41]
 Overfull \hbox (6.35838pt too wide) in paragraph at lines 174--177
 \T1/lmr/m/n/10 É co-mum en-con-trar-mos si-tu-a-ções onde os ele-men-tos de 
 um con-junto são tamb´´em
@@ -1379,12 +1388,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 191.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 191.
-[41]
+[42]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 274.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 274.
- [42]
+ [43]
 Overfull \hbox (3.0973pt too wide) in paragraph at lines 299--306
 \T1/lmr/m/n/10 res-pon-dente dos seus ele-men-tos são iguais. Por ou-tras pa-l
 a-vras, $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]; a[]; [] ; a[]\OT1/cmr/m/n/10 ) 
@@ -1404,7 +1413,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 346.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 346.
-[43]
+[44]
 ! Undefined control sequence.
 l.356 $A_1 \times A_2 \times \ldots \A
                                     _n = \{(a_1, a_2,\ldots,a_n) \mid a_i \in
@@ -1508,10 +1517,10 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 423.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 423.
-[44]
+[45]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 431.
- <chapter/imagens/31.png, id=728, 87.70265pt x 48.18pt>
+ <chapter/imagens/31.png, id=737, 87.70265pt x 48.18pt>
 File: chapter/imagens/31.png Graphic file (type png)
 
 <use chapter/imagens/31.png>
@@ -1533,11 +1542,11 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 478.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 478.
-[45
+[46
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3.1
 '
 <./chapter/imagens/31.png>]
-<chapter/imagens/32.png, id=740, 71.8936pt x 38.76984pt>
+<chapter/imagens/32.png, id=749, 71.8936pt x 38.76984pt>
 File: chapter/imagens/32.png Graphic file (type png)
 
 <use chapter/imagens/32.png>
@@ -1547,18 +1556,18 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 549.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 549.
- [46
+ [47
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3.2
 '
 <./chapter/imagens/32.png>]
-<chapter/imagens/33.png, id=754, 77.16328pt x 46.67438pt>
+<chapter/imagens/33.png, id=763, 77.16328pt x 46.67438pt>
 File: chapter/imagens/33.png Graphic file (type png)
 
 <use chapter/imagens/33.png>
 Package luatex.def Info: chapter/imagens/33.png used on input line 556.
 (luatex.def)             Requested size: 154.32614pt x 93.34848pt.
 
-<chapter/imagens/34.png, id=756, 78.6689pt x 47.42719pt>
+<chapter/imagens/34.png, id=765, 78.6689pt x 47.42719pt>
 File: chapter/imagens/34.png Graphic file (type png)
 
 <use chapter/imagens/34.png>
@@ -1568,7 +1577,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 617.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 617.
- [47
+ [48
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3.3
 '
 
@@ -1579,7 +1588,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 680.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 680.
- [48
+ [49
 warning  (pdf backend): ignoring duplicate destination with the name 'table.3.2.
 1'
 ]
@@ -1593,15 +1602,15 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 757.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 757.
-[49]
+[50]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 828.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 828.
- [50
+ [51
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3.5
 '
-] <chapter/imagens/36.png, id=800, 132.495pt x 48.55641pt>
+] <chapter/imagens/36.png, id=810, 132.495pt x 48.55641pt>
 File: chapter/imagens/36.png Graphic file (type png)
 
 <use chapter/imagens/36.png>
@@ -1621,7 +1630,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 889.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 889.
-[51
+[52
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3.6
 '
 <./chapter/imagens/36.png>]
@@ -1664,12 +1673,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 971.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 971.
-[52]
+[53]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1053.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1053.
- [53
+ [54
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3.7
 '
 ]
@@ -1682,19 +1691,19 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [54]
+ [55]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 36.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 36.
- [55
+ [56
 
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
- [56]
+ [57]
 Overfull \hbox (1.19415pt too wide) in paragraph at lines 53--55
 []\T1/lmr/m/n/10 Dado um con-junto fi-nito, liste to-dos os ele-men-tos do seu 
 conjunto-potência. 
@@ -1704,19 +1713,19 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 59.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 59.
-[57]
+[58]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 93.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 93.
- [58
+ [59
 
 ]) (./chapter/4.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [59]
+ [60]
 Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
@@ -1726,7 +1735,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 53.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 53.
-[60
+[61
 
 ]
 Overfull \hbox (12.07599pt too wide) in paragraph at lines 57--60
@@ -1743,7 +1752,7 @@ n/10 (2\OML/cmm/m/it/10 ; b\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g$
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 62.
-<chapter/imagens/41.png, id=951, 75.65765pt x 40.65187pt>
+<chapter/imagens/41.png, id=961, 75.65765pt x 40.65187pt>
 File: chapter/imagens/41.png Graphic file (type png)
 
 <use chapter/imagens/41.png>
@@ -1753,7 +1762,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 109.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 109.
- [61
+ [62
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.4.1
 '
 <./chapter/imagens/41.png>]
@@ -1763,19 +1772,19 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 184.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 184.
- [62]
+ [63]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 252.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 257.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 257.
- [63]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 330.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 330.
  [64]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 330.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 330.
+ [65]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 334.
 Package babel Info: Redefining portuges shorthand "|
@@ -1791,7 +1800,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 406.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 406.
-[65] <chapter/imagens/62.png, id=1007, 337.26pt x 135.50626pt>
+[66] <chapter/imagens/62.png, id=1016, 337.26pt x 135.50626pt>
 File: chapter/imagens/62.png Graphic file (type png)
 
 <use chapter/imagens/62.png>
@@ -1801,13 +1810,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 461.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 461.
- [66
+ [67
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.4.2
 '
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 499.
- <chapter/imagens/63.png, id=1019, 177.66376pt x 190.7125pt>
+ <chapter/imagens/63.png, id=1028, 177.66376pt x 190.7125pt>
 File: chapter/imagens/63.png Graphic file (type png)
 
 <use chapter/imagens/63.png>
@@ -1817,18 +1826,18 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 537.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 537.
- [67
+ [68
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.4.3
 '
 <./chapter/imagens/62.png>]
-<chapter/imagens/64.png, id=1031, 186.6975pt x 195.73125pt>
+<chapter/imagens/64.png, id=1040, 186.6975pt x 195.73125pt>
 File: chapter/imagens/64.png Graphic file (type png)
 
 <use chapter/imagens/64.png>
 Package luatex.def Info: chapter/imagens/64.png used on input line 560.
 (luatex.def)             Requested size: 112.01935pt x 117.43964pt.
 
-<chapter/imagens/65.png, id=1034, 168.63pt x 183.68625pt>
+<chapter/imagens/65.png, id=1043, 168.63pt x 183.68625pt>
 File: chapter/imagens/65.png Graphic file (type png)
 
 <use chapter/imagens/65.png>
@@ -1838,7 +1847,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 577.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 577.
- [68
+ [69
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.4.4
 '
 
@@ -1885,14 +1894,14 @@ l.579 ..., (2, 3), (3, 1), (3, 3), (4, 1), (4, 3)}\]
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-<chapter/imagens/66.png, id=1050, 210.7875pt x 195.73125pt>
+<chapter/imagens/66.png, id=1059, 210.7875pt x 195.73125pt>
 File: chapter/imagens/66.png Graphic file (type png)
 
 <use chapter/imagens/66.png>
 Package luatex.def Info: chapter/imagens/66.png used on input line 608.
 (luatex.def)             Requested size: 126.47346pt x 117.43964pt.
 
-<chapter/imagens/67.png, id=1051, 188.705pt x 180.675pt>
+<chapter/imagens/67.png, id=1060, 188.705pt x 180.675pt>
 File: chapter/imagens/67.png Graphic file (type png)
 
 <use chapter/imagens/67.png>
@@ -1902,7 +1911,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 619.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 619.
- [69
+ [70
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.4.6
 '
 
@@ -1923,7 +1932,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [70
+ [71
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.4.8
 '
 <./chapter/imagens/67.png>]) (./chapter/5.tex
@@ -1931,7 +1940,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [71
+ [72
 
 ]
 Cap\'{\i }tulo 5.
@@ -1943,9 +1952,9 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 48.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 48.
-[72
+[73
 
-] <chapter/imagens/51.png, id=1101, 285.69234pt x 76.03406pt>
+] <chapter/imagens/51.png, id=1110, 285.69234pt x 76.03406pt>
 File: chapter/imagens/51.png Graphic file (type png)
 
 <use chapter/imagens/51.png>
@@ -1953,9 +1962,9 @@ Package luatex.def Info: chapter/imagens/51.png used on input line 57.
 (luatex.def)             Requested size: 285.69164pt x 76.03386pt.
 
 
-LaTeX Warning: Reference `sec:107' on page 73 undefined on input line 72.
+LaTeX Warning: Reference `sec:107' on page 74 undefined on input line 72.
 
-<chapter/imagens/52.png, id=1103, 321.07452pt x 89.96109pt>
+<chapter/imagens/52.png, id=1112, 321.07452pt x 89.96109pt>
 File: chapter/imagens/52.png Graphic file (type png)
 
 <use chapter/imagens/52.png>
@@ -1965,11 +1974,11 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 102.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 102.
- [73
+ [74
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.5.1
 '
 <./chapter/imagens/51.png>]
-<chapter/imagens/53.png, id=1113, 320.32172pt x 116.30952pt>
+<chapter/imagens/53.png, id=1122, 320.32172pt x 116.30952pt>
 File: chapter/imagens/53.png Graphic file (type png)
 
 <use chapter/imagens/53.png>
@@ -1980,7 +1989,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [74
+ [75
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.5.2
 '
 
@@ -1992,7 +2001,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 
-[75
+[76
 
 ]
 Cap\'{\i }tulo 6.
@@ -2003,14 +2012,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [76
+ [77
 
 ])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 93.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 93.
- [77
+ [78
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
@@ -2027,13 +2036,13 @@ LaTeX Warning: There were undefined references.
 )
 
 Here is how much of LuaTeX's memory you used:
- 26069 strings out of 494481
+ 26077 strings out of 494481
  125171,662416 words of node,token memory allocated
  517 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 5 glue, 1 kern, 13 attribute, 54 glue_spec, 13 attr
 ibute_list, 1 write nodes
-   avail lists: 2:1299,3:422,4:70,5:385,6:3267,7:1573,8:239,9:256,10:24,11:436
- 28430 multiletter control sequences out of 65536+200000
+   avail lists: 2:1299,3:422,4:70,5:386,6:3500,7:1573,8:239,9:256,10:24,11:473
+ 28434 multiletter control sequences out of 65536+200000
  83 fonts using 5435783 bytes
  62i,16n,71p,835b,681s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKT
@@ -2055,9 +2064,9 @@ s/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
 mtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on main.pdf (77 pages, 829500 bytes).
+Output written on main.pdf (78 pages, 838243 bytes).
 
-PDF statistics: 1226 PDF objects out of 1440 (max. 8388607)
- 597 named destinations out of 1000 (max. 131072)
+PDF statistics: 1235 PDF objects out of 1440 (max. 8388607)
+ 601 named destinations out of 1000 (max. 131072)
  264 words of extra memory for PDF output out of 10000 (max. 100000000)
 

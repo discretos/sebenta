@@ -37,7 +37,7 @@ estudar alguns métodos de demonstração e estratégias para a construção de
 demonstrações.
 
 \section{Lógica proposicional}
-\label{sec1:lp}
+\label{sec11}
 
 As regras da lógica fornecem significados às sentenças ou argumentos
 matemáticos. Estas regras são utilizadas para distinguir um argumento matemático
@@ -610,7 +610,7 @@ $\lnot, \land, \lor$ e $\leftrightarrow$.
 
 
 \section{Equivalências proposicionais}
-\label{sec:eqproposicioanis}
+\label{sec12}
 
 Um passo muito importante utilizado num argumento matemático é a substituição de
 uma sentença por outra com o mesmo valor lógico. Por causa disso, métodos que
@@ -1050,7 +1050,8 @@ atribuição de valores lógicos a $p, q$ e $r$ torna $(p \lor \lnot q) \land (q
 
 \end{description}
 
-\section{Predicados e Quantificadores}
+\section{Predicados e Quantificadores}\
+\label{sec13}
 
 \subsection*{\underline{Introdução}}
 
@@ -1946,9 +1947,160 @@ uma variável $M(x)$ e $C(x)$.
 \end{exmp}
 
 \section{Quantificadores Aninhados}
+\label{sec14}
+\subsection*{Introdução}
+
+Na Secção \ref{sec13} definimos os quantificadores existências e universais e
+mostramos como os mesmos podem ser utilizandos para representar sentenças
+matemáticas. Também explicamos como estas podem ser utilizadas para traduzir
+sentenças em Português para expressões lógicas. No entanto, na Seccção
+\ref{sec13} evitamos a utilização de \textbf{quantificadores aninhandos}, onde
+um quantificador está no escopo de outro, como em
+
+\begin{center}
+$\forall x\exists y(x+y=0).$
+\end{center}
+
+Note uque tudo o que está dentro do escopo de um quantificador pode ser visto
+como uma função proposicional. Por exemplo,
+\begin{center}
+$\forall x\exists y(x + y = 0)$
+\end{center}
+é o mesmo que $\forall xQ(x)$, onde $Q(x)$ é $\exists y(P(x,y))$, onde $P(x,y)$
+é $x+y=0$.
+
+Quantificadores aninhados ocorrem normalmente em matemática e ciência da
+computação. Embora quantificadores aninhados podem por vezes ser difíceis de
+entender, as regras que já estudamos na Secção \ref{sec14} podem ajudar-nos.
+Nesta secção, iremos aumentar a experiência com quantificadores aninhados.
+Veremos como utilizadr quantificadores aninhados para expressar sentenças
+matemáticas como ``A soma de dois inteiros positovs é sempre positiva''. Iremos
+mostrar como quantificadores aninhados podem ser utilizados para traduzir
+sentenças em Português como ``Todos possuem exactamente um melhor amigo'' em
+sentenças lógicas. Além disso, iremos trabalhar com a negação de sentenças que
+envolvem quantificadores aninhados.
 
 \subsection*{\underline{Sentenças Envolvendo Quantificadores Aninhados}}
+
+Para perceber sentenças envolvendo quantificadores animhados, iremos
+desmistificar como os quantificadores e predicados que nelas apareçem
+significam. Isto é ilustrado nos exemplos a seguir.
+
+\begin{exmp}
+\label{exem148}
+Assuma que os domínios das variáveis $x$ e $y$ consiste em todos os números
+reais. A sentença
+\begin{center}
+$\forall x\forall y(x+y=y+x)$
+\end{center}
+\end{exmp}
+diz que $x+y=y+x$ para todos os números reais $x$ e $y$. Esta é a lei comutativa
+da adição de números reais. Da mesma forma, a sentença
+\begin{center}
+$\forall x\exists y(x+y=0)$
+\end{center}
+diz que para todo o número real $x$ existe um número real $y$ tal que $x+y=0$.
+Isto significa que todo o número real possui um inverso aditivo. De forma
+similar, a sentença
+\begin{center}
+$\forall x\forall y\forall z(x+(y+z)=(x+y)+z)$
+\end{center}
+é a lei associativa para a adição de números reais.
+
+\begin{exmp}
+\label{exem149}
+Traduza para Português a sentença,
+\begin{center}
+$\forall x\forall y((x>0) \land (y<0) \to (xy<0))$,
+\end{center}
+onde os domínios para ambas variáveis consiste nos números reais.
+\begin{description}
+\item[Solução:]Esta sentença diz que para todo o número real $x$ e para todo o
+número real $y$, se $x>0$ e $y<0$, então $xy<0$. Isto é, esta sentença diz que
+para os números reais $x$ e $y$, se $x$ é positivo e $y$ é negativo, então $xy$
+é negativo. Isto pode ser descrito de forma mas sucinta como ``O produto de um
+número real positivo e um número real negativo, é sempre um número real
+negativo''.
+\end{description}
+\end{exmp}
+
+\begin{description}
+\item[PENSE EM QUANTIFICADORES COMO LOOPS] Ao trabalhar com quantificadores com
+mais de uma variável, é por vezes útil pensar em termos de \emph{loops} ou 
+\emph{repetições} aninhadas. (Obviamente, se existem muitos elementos infinitos
+no domínio de uma variável, não poderemos percorrer todos os valores. Ainda
+assim, esta forma de pesar é útil no entendimento de quantificadores aninhados.)
+Por exemplo, para verificar se $\forall x\forall yP(x,y)$ é verdadeiro, devemos
+percorrer todos os valores de $x$, e para cada $x$ percorremos os valores de
+$y$. Se verificarmos que $P(x,y)$ é verdadeiro para todos os valores de $x$ e
+$y$, determinamos que $\forall x\forall yP(x,y)$ é verdadeiro. Se encontrarmos
+um valor de $x$ para o qual encontramos um valor de $y$ para o qual $P(x,y)$ é
+falso, determinamos assim que $\forall x\forall yP(x,y)$ é falso. 
+
+De maneira similar, para determinar se $\forall x\exists yP(x,y)$ é verdadeiro,
+percorremos os valores para $x$. Para cada $x$, percorremos os valores de $y$
+até encontrarmos um $y$ para o qual $P(x,y)$ seja verdadeiro. Se para todo $x$
+encontramos tal $y$, então $\forall x\exists yP(x,y)$ é verdadeiro; se para
+algum $x$ nunca encontramos tal $y$, então $\forall x\exists yP(x,y)$ é falso.
+
+Para verificar se $\exists x\forall yP(x,y)$ é verdadeiro, percorremos os
+valores para $x$ até encontrarmos um $x$ para o qual $P(x,y)$ é sempre
+verdadeiro quando percorremos todos os valores para $y$. Quando encontramos tal
+$x$, sabemos que $\exists x\forall yP(x,y)$ é verdadeiro. Se nunca encontramos
+tal $x$, então sabemos que $\exists x\forall yP(x,y)$ é falso.
+
+Finalmente, para verificar que $\exists x\exists yP(x,y)$ é verdadeiro,
+percorremos pelos valores para $x$ onde para cada $x$ percorremos os valores de
+$y$ até encontrarmos um $x$ para o qual encontramos um $y$ para o qual $P(x,y)$
+seja verdadeiro. A sentença $\exists x\exists yP(x,y)$ é falsa apenas se nunca
+encontrarmos um $x$ para o qual encontramos um $y$ para o qual $P(x,y)$ é
+verdadeiro.
+\end{description}
+
+
 \subsection*{\underline{A Ordem dos Quantificadores}}
+
+Muitas sentenças matemáticas envolvem múltiplas quantificações de funções
+proposicionais envolvendo mais de uma variável. É importante notar que a ordem
+dos quantificadores é importante, ao menos que todos os quantificadores sejam
+quantificadores universais ou que todos sejam quantificadores existênciais.
+Estes detalhes são ilustrados nos exemplos a seguir.
+
+\begin{exmp}
+\label{exem150}
+Seja $P(x,y)$ a sentença ``$x+y=y+x$''. Quais são os valores lógicos para as
+quantificações $\forall x\forall yP(x,y)$ e $\forall y\forall xP(x,y)$ onde o
+domínio para todas as variáveis consiste em todos os números reais?
+\begin{description}
+\item[Solução:]A quantificação
+\begin{center}
+$\forall x\forall yP(x,y)$
+\end{center}
+denota a proposição
+\begin{center}
+``Para todos os números reais $x$, para todos os números reais $y$, $x+y=y+x$''
+\end{center}
+Como $P(x,y)$ é verdadeiros para todos os números reais $x$ e $y$ (esta é a lei
+comutativa da adição, que é um axioma para os números reais), a proposição
+$\forall x\forall y$ é verdadeira. Note que a sentença $\forall y\forall
+xP(x,y)$ diz ``Para todos os números reais $y$, para todos os números reais $x$,
+$x+y=y+x$''. Isto é possui o mesmo significado que a sentença ``Para todos os
+números reais $x$, para todos os números reais $y$, $x+y=y+x$''. Isto é,
+$\forall x\forall y$ e $\forall y\forall x$ possuem o mesmo significado, e ambos
+são verdadeiros. Isto ilustra o princípio de que a ordem dos quantificadores
+aninhados numa sentença sem outros quantificadores pode ser alterada sem alterar
+o significado da sentença quantificada.
+\end{description}
+\end{exmp}
+
+
+\begin{exmp}
+\label{exem151}
+Seja $Q(x,y)$ denotar ``$x+y=0$''. Quais são os valores lógicos das
+quantificações $\exists y\forall xQ(x,y)$ e $\forall x\exists yQ(x,y)$, onde o
+domínio consiste em todos os números reais?
+\end{exmp}
+
 \subsection*{\underline{Sentenças Matemáticas e Sentenças Envolvendo Quantificadores
 Aninhados}}
 \subsection*{\underline{Tradução de Quantificadores Aninhados para Português}}

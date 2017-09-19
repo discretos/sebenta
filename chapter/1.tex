@@ -1760,13 +1760,196 @@ pela lei de De Morgan é equivalnte a $\lnot P(x_1) \land \lnot P(x_2) \land
 Ilustramos a utilização da negação de sentenças quantificadas com os exemplos a
 seguir.
 
- \subsection*{\underline{Tradução de Expressões Lógicas}}
+\begin{exmp}
+\label{exem144}
+Quais são as negações das sentenças ``Existe um político honesto'' e ``Todos os
+angolanos comem magogas''?
+\begin{description}
+\item[Solução:] Façamos $H(x)$ denotar ``$x$ é honesto''. Então, a sentença
+``Existe um político honesto'' é representada por $\exists xH(x)$, onde o
+domínio consiste em todos os políticos. A negação desta sentença é
+$\lnot\exists H(x)$, que é equivalente à $\forall x\lnot H(x)$. Esta negação
+pode ser expressa como ``Todo o político é desonesto''. (Nota: Em português, a
+sentença ``Todos os políticos não são honestos'' é ambígua. Em linguagem comum,
+esta sentença geralmente significa ``Nem todos os políticos são honesto''.
+Consequentemente, não usamos esta sentença para exprimir esta negação.)
+
+
+Façamos $C(x)$ a denotar a expressão ``$x$ como magogas''. Então a sentença
+``Todos os angolanos comem magogas'' é representada por $\forall xC(x)$, onde o
+domínio consiste em todos os angolanos. A negação desta sentença é $\lnot
+\forall C(x)$, que é equivalente à $\exists x\lnot C(x)$. Esta negação pode ser
+expressada em diferentes formas, incluindo ``Alguns angolanos não comem
+magogas'' e ``Existe um americano que não come magogas''.
+\end{description}
+\end{exmp}
+
+\begin{exmp}
+\label{exem145}
+Mostre que $\lnot \forall x(P(x) \to Q(x))$ e $\exists x(P(x)) \land \lnot
+Q(x))$ são logicamente equivalentes.
+\begin{description}
+\item[Solução:]Pela lei de De Morgan para os quantificadores universais, sabemos
+que $\lnot\forall x(P(x) \to Q(x))$ e $\exists (\lnot (P(x) \to Q(x)))$ são
+logicamente equivalentes. Pela quinta lógica equivalênncia na Tabela
+\ref{tab124} da Secção \ref{sec1:lp}, sabemos que $\lnot(P(x) \to Q(x))$ e
+$P(x) \land \lnot Q(x)$ são logicamente equivalentes para todo $x$. Como podemos
+substituir uma expressão logicamente equivalente por outra numa equivalência
+lógica, segue-se que $\lnot \forall x(P(x) \to Q(x))$ e $\exists x(P(x) \land
+\lnot Q(x))$ são logicamente equivalentes.
+\end{description}
+
+\end{exmp}
+
+\subsection*{\underline{Tradução do Português para Expressões Lógicas}}
+
+Traduzir sentenças em português (ou outra língua) para expressões lógicas é
+uma tarefa crucial em matemática, lógica de programação, inteligência
+artificial, engenharia de \emph{software} e em muitas outra disciplinas.
+Começamos a estudar este tópico na Secção \ref{sec1:lp}, onde utilizamos
+proposições para expressar sentenças em expressões lógicas. Em tal discussão,
+evitamos propositadamente sentenças cuja tradução requeria predicados e
+quantificadores. Traduzir de português para expressões lógica é mais complexo
+ainda quando são necessários quantificadores. Além disso, podem existir muitas
+formas de traduzir uma sentença. (Como consequência, não existe um ``livro de
+recietas'' para fazer isso). Iremos utilizar alguns exemplos para ilustrar como
+traduzir sentenças do português para expressões lógicas. O objectivo nesta
+tradução é produzir expressões lógicas simples e úteis. Nesta secção, iremos nos
+restringir à sentenças que podem ser traduzidas em expressões lógicas utilizando
+um único quantificador; na próxima secção, iremos olhar para sentenças mais
+complicadas que requerem múltiplos quantificadores.
+
+\begin{exmp}
+\label{exem146}
+Expresse a sentença ``Todos os estudantes nesta sala teve Cálculo I''
+utilizando predicados e quantificadores.
+\begin{description}
+\item[Solução:]Primeiro, reescrevemos a sentença para que possamos claramente
+identificar os quantificadores apropriados a utilizar. Fazendo isso, obtemos:
+\begin{center}
+``Para todo o estudante nesta sala, tal estudante teve Cálculo I'',
+\end{center}
+A seguir, introduzimos a variável $x$ para que a nossa sentença se torne
+\begin{center}
+``Para todo o estudante $x$ nesta sala, $x$ teve Cálculo I''.
+\end{center}
+
+Continuando, introduzimos $C(x)$, que é a sentença ``$x$ teve Cálculo I''.
+Consequentemente, se o domínio para $x$ consiste nos estudantes na sala, podemos
+traduzir a nossa sentença em $\forall xC(x)$.
+
+No entanto, existem outras abordagens; podem ser utilizandos diferentes domínios
+de discurso e outros predicados. A abordagem que escolhermos depende do
+raciocínio subsequente que queremos ter. Por exemplo, poderemos estar
+interessdaos num grupo maior de pessoas para além dos estudantes nesta sala. Se
+alterarmos o domínio para passar a ser o de todas as pessoas, teremos de
+expressar a nossa sentença assim
+
+\begin{center}
+``Para toda a pessoa $x$, se a pessoa $x$ é um estudante nesta sala, então $x$
+teve Cálculo I''.
+\end{center}
+\end{description}
+\end{exmp}
+
+
+Se $S(x)$ representa a sentença que uma pessoa $x$ está nesta sala, vemos que a
+nossa sentença pode ser expressa como $\forall x(S(x) \to C(x))$.
+[\emph{Cuidado!} A nossa sentença \emph{não pode} expressa como $\forall
+x(S(x) \land C(x))$ porque esta sentença diz que todas as pessoas são
+estudantes nesta sala e tiveram Cálculo I!].
+
+Finalmente, quando estamos interessados no histórico da pessoa em tópicos para
+além de Cálculo I, devemos preferencialmente utilizar o quantificadores de duas
+variáveis $Q(x,y)$ para a sentença ``o estudante $x$ teve a disciplina $y$''.
+Depois iriamos substituir $C(x)$ por $Q(x, $``Cálculo I''$)$ nas duas abordagens
+para obter $\forall xQ(x, $``Cálculo I''$)$ ou $\forall x(S(x) \to Q(x,
+$``Cálculo I''$))$.
+
+No exemplo \ref{exem146} mostramos diferentes abordagens para expressar a mesma
+sentença usando predicados e quantificadores. No entanto, devemos sempre adoptar
+a abordagem mais simples que é apropriada para raciocínio subsequente.
+
+\begin{exmp}
+\label{exem147}
+Expresse a sentença ``Alguns estudantes nesta sala já visitaram o México'' e
+``Todo o estudante nesta sala já visitou Canadá ou México'' utilizando
+predicados e quantificadores.
+\begin{description}
+\item[Solução:]A sentença ``Alguns estudantes nesta sala já visitaram o
+México'' significa que
+\begin{center}
+``Existe um estudante nesta sala com a propriedade de que tal estudante já
+visitou o México.''
+\end{center}
+
+Podemos introduzir a variável $x$, para que a nossa sentença se torne
+\begin{center}
+``Existe um estudante $x$ nesta sala com a propriedade de que $x$ já visitou o
+México.''
+\end{center}
+
+Introduzimos $M(x)$, que é a sentença ``$x$ já visitou México''. Se o domínio de
+$x$ consiste nos estudantes desta sala, podemos traduzir esta primeira sentença
+como $\exists xM(x)$.
+
+No entanto, se estiveremos interessados em pessoas para além destas na sala,
+olhamos para a sentença de forma diferente. A nossa sentença pode ser expressa
+como
+
+\begin{center}
+``Existe uma pessoa $x$ com a propriedade de que $x$ é um estudante nesta sala e
+$x$ já visitou México''.
+\end{center}
+
+Neste caso, a domínio da variável $x$ consiste em todas as pessoas. Introduzimos
+$S(x)$ para reprsentar ``$x$ é um estudante nesta sala''. A nossa solução
+torna-se $\exists x(S(x) \land M(x))$ porque a sentença é que existe uma pessoa
+$x$ que é estudante nesta sala e que já visitou México. [\emph{Cuidado!}] A
+nossa sentença não pode ser expressa como $\exists x(S(x) \to M(x))$, que é
+verdade quando existe alguém que não é parte desta sala porque, neste caso, para
+tal pessoa $x$, $S(x) \to M(x)$ torna-se $\textbf{F} \to \textbf{V}$ ou
+$\textbf{F} \to \textbf{F}$, que são ambos verdadeiros.
+
+Similarmente, a segunda sentença pode ser expressa como
+
+\begin{center}
+``Para todo $x$ nesta sala, $x$ possui a propriedade de $x$ já ter visitado
+México ou de $x$ ter visitado Canadá''.
+\end{center}
+
+(Note que estamos a assumir o ou-inclusivo, ao invés do ou-exclusivo.) Fazemos
+$C(x)$ ser a sentença ``$x$ já visitou Canada''. Seguindo o nosso raciocínio
+anterior, vemos que se o domínio de $x$ consiste nos estudantes desta sala, esta
+segunda sentença pode ser expressa como $\forall x(C(x) \lor M(x))$. No entanto,
+se o domínio para $x$ consiste em todas as pessoas, a nossa sentença pode ser
+expressa como
+
+\begin{center}
+``Para cada pessoa $x$, se $x$ é um estudante nesta sala, então $x$ já visitou
+México ou $x$ já visitou Canadá''.
+\end{center}
+
+Neste caso, a sentença pode ser expressa como $\forall x(S(x) \to (C(x) \lor
+M(x)))$.
+Ao invés de utilizarmos $M(x)$ e $C(x)$ para representar o facto de $x$ já ter
+visitado México e $x$ já ter visitado Canadá, respectivamente, podemos um
+predicado de duas variáveis $V(x,y)$ para representar ``$x$ já visitou o país
+$y$''. Neste caso, $V(x, $``México''$)$ e $V(x, $``Canadá''$)$ teriam os mesmos
+significados que $M(x)$ e $C(x)$ e pode removê-los nas nossas respostas. Se
+estivermos a trabalhar com muitas sentenças que envolvem pessoas visitando
+países diferentes, talvez possamos preferir utilizar a abordagem de duas
+variáveis. De outra forma, por simplicidade, iremos ficar pelos predicados de
+uma variável $M(x)$ e $C(x)$.
+
+\end{description}
+\end{exmp}
 
 \section{Quantificadores Aninhados}
 
-\subsection*{\underline{Sentenças Involvendo Quantificadores Aninhados}}
+\subsection*{\underline{Sentenças Envolvendo Quantificadores Aninhados}}
 \subsection*{\underline{A Ordem dos Quantificadores}}
-\subsection*{\underline{Sentenças Matemáticas e Sentenças Involvendo Quantificadores
+\subsection*{\underline{Sentenças Matemáticas e Sentenças Envolvendo Quantificadores
 Aninhados}}
 \subsection*{\underline{Tradução de Quantificadores Aninhados para Português}}
 \subsection*{\underline{Negação de Quantificadores Aninhados}}

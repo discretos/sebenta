@@ -2,8 +2,8 @@
 % futuro
 \label{cap:conjuntos}
 
-\label{sec3:conjuntos}
 \section{Conjuntos}
+\label{sec31}
 
 \subsection*{\underline{Introdução}}
 
@@ -15,7 +15,7 @@ estudantes que estão inscritos na Universidade Agostinho Neto formam um
 conjunto. Da mesma forma, todos os estudantes actualmente inscritos na
 disciplina de Estruturas Discretas em qualquer Universidade formam um conjunto. Além disso, estes
 estudantes inscritos na Universidade Agostinho Neto e inscritos na disciplina de
-Estruturas Discretas formam um conjunto composto pelos os elementos em comum
+Estruturas Discretas formam um conjunto composto pelos elementos em comum
 das duas primeiras coleções.
 
 A linguagem dos conjuntos é uma forma de se estudar tais coleções de forma
@@ -30,6 +30,7 @@ organizada. Daremos a seguir uma definição do termo ``conjunto''. Esta defini�
 elemento do conjunto. A notação $a \notin A$ denota que $a$ não é um elemento
 do conjunto $A$.
 \end{defn}
+
 
 É comum representar os conjuntos com letras maiúsculas. As letras minúsculas são
 geralmente utilizadas para denotar os elementos dos conjuntos. Existem diversas
@@ -46,8 +47,8 @@ O conjunto $V$ de todas as vogais no alfabeto Português pode ser escrito como $
 \end{exmp}
 \label{exem32}
 \begin{exmp}
-O conjunto I de todos os inteiros positivos menores que 10 pode ser escrito como
-$I=\{1,3,5,7,9\}$.
+O conjunto I de todos os inteiros ímpares positivos menores que 10 pode ser
+escrito como $I=\{1,3,5,7,9\}$.
 \end{exmp}
 \label{exem33}
 \begin{exmp}
@@ -106,7 +107,7 @@ um papel importante na matemática discreta:
 \end{enumerate}
 
 Note que que algumas pessoas não consideram o $0$ como um número natural,
-portanto tena cuidado na utilização do termo \emph{número natural} quando lê
+portanto tenha cuidado na utilização do termo \emph{número natural} quando lê
 outros conteúdos/livros.
 
 Conjuntos podem ter outros conjuntos como seus elementos, como ilustra o exemplo
@@ -171,8 +172,8 @@ vazio seria uma pasta com apenas um elemento, nomeadamente, uma pasta vazia.
 
 \subsection*{\underline{Subconjuntos}}
 
-É comum encontrarmos situações onde os elementos de um conjunto são tamb´´em os
-lementos de um segundo conjunto. Iremos agora introduzir alguma terminologia e
+É comum encontrarmos situações onde os elementos de um conjunto são também os
+elementos de um segundo conjunto. Iremos agora introduzir alguma terminologia e
 notações para expressar estas relações entre conjuntos.
 
 \begin{defn}
@@ -197,18 +198,50 @@ números racionais é um subconjunto do conjunto dos números reais.
 \end{exmp}
 
 \begin{description}
-\item[Teorema 1] Para todo conjunto $S$, $\emptyset \subseteq S$ e $S \subseteq
-S$
+\item[Teorema 1.] Para todo conjunto $S$,
+\begin{enumerate}
+  \item $\emptyset \subseteq S$
+  \item $S \subseteq S$
+\end{enumerate}
+
+\begin{description}
+\item[\emph{Demonstração:}] Iremos demonstrar (1) e deixar a demonstração de (2)
+como exercício. Seja $S$ um conjunto. Para mostrar que $\emptyset \subseteq S$,
+devemos mostrar que $\forall x(x \in \emptyset \to x \in S)$ é verdadeiro. Como
+o conjunto vazio não possui elementos, segue-se que $x \in \emptyset$ é sempre
+falso. Segue-se daí que a sentença condicional $x \in \emptyset \to x \in S$ é
+sempre falsa, porque a sua hipótese é sempre falsa e uma sentença condicional
+com uma falsa hipótese, é verdadeira. Sendo assim, $\forall x(x \in \emptyset
+\to x \in S)$ é verdadeiro. Isto completa a demonstração de (1).
+
+\end{description}
 \end{description}
 
-Para mostrar que dois conjuntos são $A$ e $B$ são iguais, mostre que $A
-\subseteq B$ e $B \subseteq A$. Os conjuntos podem ter outros conjuntos como
-membros. Por exzemplo, temos os conjuntos
+Quando queremos enfatizar que um conjunto $A$ é um subconjunto de um conjunto
+$B$ mas que $A \neq B$, escrevemos $A \subset B$ e dizemos que $A$ é um
+\textbf{subconjunto próprio} de $B$. Para $A \subseteq B$ ser verdadeiro, deve
+acontecer que $A \subseteq B$ e deve existir um elemento $x$ em $B$ que não é um
+elemento de $A$. Isto é, $A$ é um subconjunto próprio de $B$ se e somente se
+\begin{center}
+$\forall x(x \in A \to x \in B) \land \exists x(x \in B \land x \notin A)$
+\end{center}
+é verdadeiro.
+
+Uma forma útil de mostrar que dois conjuntos possuem os mesmos elementos é por
+provar que cada conjunto é um subconjunto do outro. Por outras palavras, podemos
+mostrar que $A$ e $B$ são conjuntos com $A \subseteq B$ e $B \subseteq A$, então
+$A = B$. Isto é, $A=B$ se e somente se $\forall x(x \in A \to x \in B)$ e
+$\forall x(x \in B \to x \in A)$ ou de maneira equivalente, se e somente se
+$\forall x(x \in A \leftrightarrow B)$, que é o que significa $A$ e $B$ serem
+iguais.
+
+
+Os conjuntos podem ter outros conjuntos como membros. Por exemplo, temos os
+conjuntos
 \begin{center}
 $A = \{\emptyset, \{a\}, \{b\}, \{a,b\}\}$ e $B = \{x \mid x$ é um subconjunto
 do conjunto $\{a,b\}\}$
 \end{center}
-
 Note que estes dois conjuntos são iguais, isto é, $A = B$. Note também que
 $\{a\} \in A$, mas $a \notin A$.
 
@@ -223,12 +256,36 @@ Seja $S$ um conjunto. Se existem exactamente $n$ elementos distintos em $S$ onde
 $n$ é um inteiro não negativo, dizemos que $S$ é um \emph{conjunto finito} e que
 $n$ é a cardinalidade de $S$. A cardinalidade de $S$ é denotada por $\mid
 S \mid$.
+\begin{description}
+\item[\emph{Nota:}] O termo \emph{cardinalidade} vem da utilização comum do
+termo \emph{número cardinal} como o tamanho de um conjunto finito.
+\end{description}
 \end{defn}
+
+\begin{exmp}
+\label{exem38}
+Seja $A$ o conjunto dos inteiros positivos menores que 10. Então $\mid A
+\mid=5.$
+\end{exmp}
+
+
+\begin{exmp}
+\label{exem39}
+Seja $S$ o conjunto das letras do alfabeto Português. Então $\mid S \mid=26.$
+\end{exmp}
+
+\begin{exmp}
+\label{exem310}
+Como o conjunto vazio não possui elementos, segue-se que $\mid \emptyset
+\mid=0.$
+\end{exmp}
 
 \begin{defn}
 \label{def35}
 Um conjunto é chamado de \emph{infinito} quando não é finito.
 \end{defn}
+
+O conjunto dos números inteiros positivos é um conjunto infinito.
 
 \subsection*{\underline{Conjunto - Potência}}
 Muitos problemas envolvem a necessidade de testar todas as combinações possíveis
@@ -245,30 +302,29 @@ $\mathcal{P}$.
 \end{defn}
 
 \begin{exmp}
-\label{exem38}
+\label{exem311}
 Qual é o conjunto-potência do conjunto $\{0,1,2\}$?
 
 \begin{description}
-\item[Solução:] O conjunto-potência $\mathcal{P}(\{0,1,2\})$ é o cojunto de
+\item[Solução:] O conjunto-potência $\mathcal{P}(\{0,1,2\})$ é o conjunto de
 todos os subconjuntos de $\{0,1,2\}$. Sendo assim
 \begin{center}
 $\mathcal{P}(\{0,1,2\}) = \{\emptyset, \{0\}, \{1\}, \{2\}, \{0,1\}, \{0,2\},
 \{1,2\}, \{0,1,2\}\}$.
 \end{center}
+Note que o conjunto vazio e conjunto em si próprio são membros de conjunto de
+subconjuntos.
 \end{description}
 
 \end{exmp}
 
-
-
 \begin{exmp}
-\label{exem39}
+\label{exem312}
 Qual é o conjunto-potência do conjunto vazio? Qual é o conjunto potência do
 conjunto $\{\emptyset\}$?
-
 \begin{description}
 \item[Solução:]O conjunto vazio possui exactamente um subconjunto, nomeadamente,
-sí próprio. Consequentemente
+sí próprio. Consequentemente,
 \begin{center}
 $\mathcal{P}(\emptyset) = \{\emptyset\}$.
 \end{center}
@@ -306,7 +362,7 @@ que $a = b$.
 
 Muitas das estruturas discretas que iremos estudar em capítulos posteriores são
 baseadas na noção de \emph{produto Cartesiano} (em homenagem ao matemático
-francês René Descartes). Iremos primeiramente definir o produto cartesianos de
+francês René Descartes). Iremos primeiramente definir o produto cartesiano de
 dois conjuntos.
 
 \begin{defn}
@@ -320,7 +376,7 @@ $A \times B = \{(a,b) \mid a \in A \land b \in B\}.$
 \end{defn}
 
 \begin{exmp}
-\label{exem310}
+\label{exem313}
 Qual é o produto Cartesiano de $A = \{1,2\}$ e $B = \{a,b,c\}$?
 \begin{description}
 \item[Solução:]O produto Cartesiano $A \times B$ é
@@ -329,49 +385,74 @@ $A \times B = \{(1,a), (1,b), (1,c), (2,a), (2,b), (2,c)\}$.
 \end{center}
 Note que o produto Cartesiano $A \times B$ e $B \times A$ não são equivalentes,
 ao menos que $A = \emptyset$ ou $B = \emptyset$ (de tal forma que $A \times B
-= \emtyset$) ou $A = B$. Isto é ilustrado no exemplo \ref{exem311}.
+= \emptyset$) ou $A = B$. Isto é ilustrado no exemplo \ref{exem314}.
 \end{description}
 \end{exmp}
 
 \begin{exmp}
-\label{exem311}
+\label{exem314}
 Mostre que o produto Cartesiano $B \times A$ não é igual ao produto cartesiano
-$A \times B$ onde $A$ e $B$ são os mesmos do exemplo \ref{exem310}.
+$A \times B$ onde $A$ e $B$ são os mesmos do exemplo \ref{exem313}.
 \begin{description}
 \item[Solução:] O produto Cartesiano $B \times A$ é
 \begin{center}
 $B \times A = \{(a,1), (a,2), (b,1), (b,2),(c,1),(c,2)\}$.
 \end{center}
-Este resultado é diferente de $A \times B$ obtido no exemplo \ref{exem310}.
+Este resultado é diferente de $A \times B$ obtido no exemplo \ref{exem313}.
 \end{description}
 \end{exmp}
 
 \begin{defn}
 \label{def39}
 O \emph{producto Cartesiano} dos conjuntos $A_1, A_2, \ldots, A_n$, denotado por
-$A_1 \times A_2 \times \ldots \times A_n$, é o conjunto de pares ordenados de
+$A_1 \times A_2 \times \ldots \times A_n$, é o conjunto de
 $n$-tuplas ordenadas $(a_1, a_2, \ldots,a_n)$ onde $a_i$ pertence a $A_i$ para
 $i = 1,2,\ldots,n$. Em outras palavras,
 \begin{center}
-$A_1 \times A_2 \times \ldots \A_n = \{(a_1, a_2,\ldots,a_n) \mid a_i \in
+$A_1 \times A_2 \times \ldots \times A_n = \{(a_1, a_2,\ldots,a_n) \mid a_i \in
 A_i$ para $i = 1,2,\ldots,n\}$.
 \end{center}
 \end{defn}
 
 \begin{exmp}
-\label{exem312}
+\label{exem315}
 Qual é o produto Cartesiano $A \times B \times C$, onde $A = \{0,1\}, B=\{1,2\}$
 e $C = \{0,1,2\}$?
 \begin{description}
 \item[Solução:]O produto Cartesiano $A\times B\times C$ consiste em todas as
 triplas ordenadas $(a,b,c)$, onde $a \in A$, $b \in B$, e $c \in C$. Assim,
-\begin{center}
-$A\times B\times C =
-\{(0,1,0),(0,1,1),(0,1,2),(0,2,0),(0,2,1)\\,(0,2,2),(1,1,0),(1,1,1),(1,1,2),(1,2,0),(1,2,1),(1,2,2)\}$
-\end{center}
+\\ \\
+{$A\times B\times C=\qquad\{(0,1,0), (0,1,1), (0,1,2), (0,2,0), (0,2,1),
+(0,2,2),$}
+
+{$\qquad\qquad\qquad\qquad(1,1,0), (1,1,1), (1,1,2), (1,2,0), (1,2,1),
+(1,2,2)\}$} \\
+
+\item[Nota:] Note que quando $A$, $B$ e $C$ são conjuntos, $(A \times B) \times
+C$ não é o mesmo que $A \times B \times C$.
 \end{description}
 \end{exmp}
 
+Utilizamos a notação $A^2$ para denotar $A \times A$, o produto Cartesiano do
+conjunto $A$ consigo próprio. De forma similar, $A^3 = A \times A \times A$,
+$A^4 = A \times A \times A \times A$. De maneira geral,
+
+$A^n =\{(a_1, a_2, \ldots, a_n) \mid a_i \in A$ para $i = 1,2,\ldots,n\}.$
+
+\begin{exmp}
+\label{exem316}
+Suponha que $A = \{1,2\}$. Segue-se que $A^2 = \{(1,1),(1,2),(2,1),(2,2)\}$ e
+$A^3=\{(1,1,1),(1,1,2),(1,2,1),(1,2,2),(2,1,1),(2,1,2),(2,2,1),(2,2,2)\}.$
+\end{exmp}
+
+O subconjunto $R$ do produto cartesiano de $A \times B$ é chamado de a
+\textbf{relação} do conjunto $A$ para o conjunto $B$. Os elementos de $R$ são
+pares ordenados, onde o primeiro elemento pertence à $A$ e o segundo à $B$. Por
+exemplo, $R=\{(a,0),(a,1),(a,3),(b,1),(b,2),(c,0),(c,3)\}$ é a relação do
+conjunto $\{a,b,c\}$ para o conjunto $\{0,1,2,3\}$. A relação do conjunto $A$
+para si mesmo é chamada de relação em $A$.
+
+Iremos estudar relações e as suas propriedades no Capítulo \ref{cap:relacoes}.
 
 \subsection*{\underline{Utilizando a Notação de Conjuntos com Quantificadores}}
 
@@ -384,7 +465,7 @@ existêncial de $P(x)$ sobre os elementos em $S$. Isto é, $\exists x\in S(P(x))
 é a simplificação de $\exists x(x \in S \land P(x))$.
 
 \begin{exmp}
-\label{exem313}
+\label{exem317}
 O que é que as sentenças $\forall x\in \textbf{R}(x^2 \geq 0)$ e $\exists x \in
 \textbf{Z}(x^2 = 1)$ significam?
 \begin{description}
@@ -407,7 +488,7 @@ para os quais $P(x)$ é verdade. O conjunto-verdade de $P(x)$ é denotado por
 $\{x \in D \mid P(x)\}$.
 
 \begin{exmp}
-\label{exem314}
+\label{exem318}
 Quais são os conjuntos-verdade dos predicados $P(x), Q(x)$ e $R(x)$, onde o
 domínio é o conjunto dos números inteiros e $P(x)$ é ``$|x| = 1$'', $Q(x)$ é
 ``$x^2 = 2$'' e $R(x)$ é ``$|x| = x$''.
@@ -427,6 +508,11 @@ acontece que o conjunto-verdade de $R$ é o conjunto $\textbf{N}$, o conjunto
 dos números inteiros não-negativos.
 \end{description}
 \end{exmp}
+
+Note que $\forall xP(x)$ é verdadeiro no domínio $U$ (conjunto universo) se e
+somente se o conjunto-verdade de $P$ é o conjunto $U$. Da mesma forma, $\exists
+xP(x)$ é verdadeiro sob o domínio $U$ se e somente se o conjunto-verdade de $P$
+não é vazio.
 
 \section{Operações sobre Conjuntos}
 
@@ -465,7 +551,7 @@ representam $B$.
 \end{figure}
 
 \begin{exmp}
-\label{exem315}
+\label{exem319}
 A união dos conjuntos $\{1,3,5\}$ e $\{1,2,3\}$ é o conjunto $\{1,2,3,5\}$; isto
 é, $\{1,3,5\} \cup \{1,2,3\} = \{1,2,3,5\}$.
 \end{exmp}
@@ -496,7 +582,7 @@ $A$ e $B$.
 \end{figure}
 
 \begin{exmp}
-\label{exem316}
+\label{exem320}
 A intersecção dos conjuntos $\{1,3,5\}$ e $\{1,2,3\}$ é o conjunto $\{1,3\}$;
 isto é $\{1,3,5\} \cap \{1,2,3\} = \{1,3\}$.
 \end{exmp}
@@ -508,7 +594,7 @@ vazio (ou é nula).
 \end{defn}
 
 \begin{exmp}
-\label{exem317}
+\label{exem321}
 Seja $A = \{1,3,5,7,9\}$ e $B = \{2,4,6,8,10\}$. Como $A \cap B = \emptyset$.
 $A$ e $B$ são disjuntos.
 \end{exmp}
@@ -549,7 +635,8 @@ $A - B = \{x \mid x \in A \land x \notin B\}$.
 \end{center}
 
 O diagrama de Venn apresentado na figura \ref{fig33} representa a diferença
-entre os conjuntos $A$ e $B$.
+entre os conjuntos $A$ e $B$. A área marcada no círculo que representa $A$ e
+fora do círculo que representa $B$ é a área que representa $A-B$.
 
 \begin{figure}[H]
 	\centering
@@ -559,11 +646,14 @@ entre os conjuntos $A$ e $B$.
 \end{figure}
 
 \begin{exmp}
-\label{exem318}
+\label{exem322}
 A diferença entre $\{1,3,5\}$ e $\{1,2,3\}$ é o conjunto $\{5\}$; isto é,
 $\{1,3,5\}-\{1,2,3\} = \{5\}$. Isto é diferente da diferença entre $\{1,2,3\}$ e
 $\{1,3,5\}$, que é o conjunto $\{2\}$.
 \end{exmp}
+
+Uma vez que o conjunto universal $U$ é especificado, o \textbf{complemento} de
+um conjunto pode ser definido.
 
 \begin{defn}
 \label{def314}
@@ -590,17 +680,26 @@ Na figura \ref{fig34} a área sombreada fora do círculo que representa $A$ é a
 
 
 \begin{exmp}
-\label{exem319}
+\label{exem323}
 Seja $A = \{a,e,i,o,u\}$, onde o conjunto-universo é o conjunto de todas as
 letras do alfabeto, então $\overline{A} = \{b,c,d,f,g,h,j,\ldots,x,y,z\}$.
 \end{exmp}
 
 \begin{exmp}
-\label{exem320}
+\label{exem324}
 Seja $A$ o conjunto dos números positivos inteiros maiores que 10 (onde o
 conjunto universal é o conjunto de todos os positivos inteiros), então
 $\overline{A} = \{1,2,3,4,5,6,7,8,9,10\}$.
 \end{exmp}
+
+Cabe ao leitor demonstrar que podemos expressar a diferença de $A$ e $B$ como a
+intersecção de $A$ e o complemento de $B$. Isto é,
+
+
+{
+$A-B=A \cap \overline{B}.$\\
+}
+
 
 \subsection*{\underline{Identidade de Conjuntos}}
 
@@ -664,7 +763,7 @@ utilizamos uma demonostração directa para fazer isso. Iremos ilustrar este tip
 de demonstração por estabelecer a primeira lei de De Morgan.
 
 \begin{exmp}
-\label{exem321}
+\label{exem325}
 Demonstre que $\overline{A \cap B} = \overline{A} \cup \overline{B}$
 \begin{description}
 \item[Solução:] Iremos primeiramente demonstrar que os dois conjuntos
@@ -706,11 +805,11 @@ são iguais e a identidade está provada.
 \end{exmp}
 
 Podemos agora mais sucintamente expressar este raciocínio no exemplo
-\ref{exem321}, utilizando a notação de construção de domínios, tal como o
-exemplo \ref{exem322} ilustra.
+\ref{exem326}, utilizando a notação de construção de domínios, tal como o
+exemplo \ref{exem327} ilustra.
 
 \begin{exmp}
-\label{exem322}
+\label{exem326}
 Utilize a notação de construção de conjuntos e equivalências lógicas para
 estabelecer a primeira lei de De Morgan $\overline{A \cap B} = \overline{A}
 \cup \overline{B}$.
@@ -718,31 +817,71 @@ estabelecer a primeira lei de De Morgan $\overline{A \cap B} = \overline{A}
 \item[Solução:]Podemos provar esta identidade com os seguintes passos:
 
 \begin{table}[H]
-	\centering
-	\begin{tabular}{rcll}%
-	$\overline{A \cap B}$&$=$ & $\{x \mid x \notin A \cap B\}$ 			& \emph{pela
-	definição do complemento}\\
-	 					 &$=$ & $\{x \mid \lnot (x \in (A \cap B))\}$	& \emph{pela definição de
-	 					 não pertença}\\
-	 					 &$=$ & $\{x \mid \lnot (x \in A \land x \in B)\}$ & \emph{pela
-	 					 definição de intersecção}\\
-						 &$=$ & $\{x \mid \lnot(x \in A) \lor \lnot (x \in B)\}$ & \emph{pela
-						 1a. lei de De Morgan para equivalências lógicas} \\
-						 &$=$ & $\{x \mid x \notin A \lor x \notin B\}$ & \emph{pela definição de
-						 não pertença}\\
-						 &$=$ & $\{x \mid x \in \overline{A} \lor x \in \overline{B}\}$ &
-						 \emph{pela definição do complemento}\\
-						 &$=$ & $\{x \mid x \in \overline{A} \cup \overline{B}\}$ & \emph{pela
-						 definição da união}\\
-						 &$=$ & $\overline{A} \cup \overline{B}$ & \emph{pelo significado do
-						 construtor de conjunto}			 
-	\end{tabular}%
+\centering 
+\begin{tabular}{rcll}% 
+$\overline{A \cap B}$&$=$ & $\{x \mid x \notin A \cap B\}$ & \emph{pela
+definição do complemento}\\
+&$=$ & $\{x \mid \lnot (x \in (A \cap B))\}$ & \emph{pela definição de não
+pertença}\\
+&$=$ & $\{x \mid \lnot (x \in A \land x \in B)\}$ & \emph{pela definição de
+intersecção}\\
+&$=$ & $\{x \mid \lnot(x \in A) \lor \lnot (x \in B)\}$ & \emph{pela 1a. lei de
+De Morgan para equiv. lógicas} \\
+&$=$ & $\{x \mid x \notin A \lor x \notin B\}$ & \emph{pela definição de não
+pertença}\\
+&$=$ & $\{x \mid x \in \overline{A} \lor x \in \overline{B}\}$ & \emph{pela
+definição do complemento}\\
+&$=$ & $\{x \mid x \in \overline{A} \cup \overline{B}\}$ & \emph{pela definição
+da união}\\
+&$=$ & $\overline{A} \cup \overline{B}$ & \emph{pelo significado do construtor
+de conjunto} 
+
+\end{tabular}%
 \end{table}
 Note que para além das definições do complemento, união, pertença em conjuntos e
 o construtor de conjuntos, esta demonstração utiliza a segunda lei de De Morgan
 das equivalências lógicas.
 \end{description}
 \end{exmp}
+
+\begin{exmp}
+\label{exem327}
+Prove que a segunda lei distributiva da Tabela \ref{tab:31}, que diz que $A
+\cap (B \cup C) = (A \cap B) \cup (A \cap C)$ para todos os conjuntos $A, B$ e
+$C$.
+
+\begin{description}
+\item[Solução:] Iremos demonstrar esta identidade por mostrar que cada lado é um
+subconjunto do outro lado. Suponha que $x \in A \cap (B \cup C)$. Então $x \in
+A$ e $x \in B \cup C$. Pela definição de união, segue-se que $x \in A$ e $x \in
+B$ ou $x \in C$ (ou em ambos). Por outras palavras, sabemos que a proposição
+composta $(x \in A) \land ((x \in B) \lor (x \in C))$ é verdadeira. Pela lei
+distributiva para a conjunção sobre a disjunção, segue-se que $((x \in A)
+\land (x \in B)) \lor ((x \in A) \land (x \in C))$. Concluímos que $x \in A$ e
+$x \in B$, ou $x \in A$ e $x \in C$. Pela definição de intersecção, segue-se que
+$x \in A \cap B$ ou $x \in A \cap C$. Usando a definição de união, concluímos
+que $x \in (A \cap B) \cup (A \cap C)$. Concluímos que $A \cap (B \cup C)
+\subseteq (A \cap B) \cup (A \cap C)$.
+
+Agora suponha que $x \in (A \cap B) \cup (A \cap C)$. Assim, pela definição de
+união, $x \in A \cap B$ ou $x \in A \cap C$. Pela definição de intersecção,
+segue-se que $x \in A$ e $x \in B$ ou $x \in A$ e $x \in C$. Disto vemos que $x
+\in A$, e $x \in B$ ou $x \in C$. Consequentemente, pela definição de união
+vemos que $x \in A$ e $x \in B \cup B$. Além disso, pela definição de
+intersecção, segue-se que $x \in A \cap (B \cup C)$. Concluímos que $(A \cap B)
+\cup (A \cap C) \subseteq A \cap (B \cup C)$. Isto completa a demonstração da
+identidade.
+\end{description}
+\end{exmp}
+
+
+{
+\textbf{Tópicos por Explorar}
+\begin{itemize}
+  \item União e Interesecção Generalizadas
+  \item Representação de Conjuntos no Computador
+\end{itemize}
+}
 
 \section{Funções}
 \subsection*{\underline{Introdução}}
@@ -849,7 +988,7 @@ domínio, o co-domínio, a imagem da função e a atribuição de valores para o
 elementos do domínio.
 
 \begin{exmp}
-\label{exem323}
+
 Seja $R$ a relação com os pares ordenados (André, 22), (Brenda, 24), (Carla,
 21), (Doriel, 22), (Edna, 24) e (Felicia, 22). Cada um desses pares consiste no
 nome de um estudante e a sua idade. Especifique uma função determinada por esta
@@ -872,7 +1011,7 @@ idades dos estudantes, que é o conjunto \{21,22,24\}.
 \end{exmp}
 
 \begin{exmp}
-\label{exem324}
+
 Seja $f$ a função que atribui os dois últimos bits de uma cadeia de bits de
 tamanho 2 ou superior, a tal cadeia. Por exemplo $f(11010) = 10$. Assim, o
 domínio de $f$ é o conjunto de todas as cadeias de bits de tamanho superior a 2,
@@ -880,7 +1019,7 @@ e o co-domínio e a imagem são o conjunto $\{00,01,10,11\}$.
 \end{exmp}
 
 \begin{exmp}
-\label{exem325}
+
 Seja $f: \mathbf{Z} \to \mathbf{Z}$ que atribui o quadrado de um número inteiro
 a este número. Então, $f(x) = x^2$, onde o domínio de $f$ é o conjuntos de
 todos os números inteiros, o co-domínio de $f$ é o conjunto dos números
@@ -889,7 +1028,7 @@ perfeitos, nomeadamente, $\{0,1,4,9,\ldots\}$.
 \end{exmp}
 
 \begin{exmp}
-\label{exem326}
+
 O domínio e o co-domínio de funções geralmente são especificados em linguagens
 de programação. Por exemplo, a seguinte expressão em Java
 \begin{center}
@@ -917,7 +1056,7 @@ seus valores em $x$ em termos dos valores de $f_1$ e $f_2$ em $x$.
 \end{defn}
 
 \begin{exemp}
-\label{exem327}
+
 Sejam $f_1$ e $f_2$ duas funções de $\mathbf{R}$ em $\mathbf{R}$ tal que
 $f_1(x) = x^2$ e $f_2(x) = x - x^2$. Quais são os valores das funções $f_1 +
 f_2$ e $f_1f_2$?
@@ -954,7 +1093,7 @@ $f$ no conjunto $S$.
 \end{defn}
 
 \begin{exmp}
-\label{exem328}
+
 Seja $A = \{a,b,c,d,e\}$ e $B=\{1,2,3,4\}$ com $f(a)=2$, $f(b)=1$, $f(c)=4$,
 $f(d)=1$ e $f(e)=1$. A imagem do subconjunto $S=\{b,c,d\}$ é o conjunto
 $f(S)=\{1,4\}$.
@@ -988,7 +1127,7 @@ Ilustraremos este conceito com alguns exemplos de funções que são injectivas 
 outras que não são.
 
 \begin{exmp}
-\label{exem329}
+
 Determine se a função $f$ de $\{a,b,c,d\}$ para $\{1,2,3,4,5\}$ com $f(a)=4$,
 $f(b)=5$, $f(c)=1$ e $f(d)=3$ é injectiva.
 \begin{description}
@@ -1023,7 +1162,7 @@ quatro elementos do seu domínio. Isto é ilustrado na figura \ref{fig37}.
 \end{figure}
 
 \begin{exmp}
-\label{exem330}
+
 Determine se a função $f(x)=x^2$ do conjunto dos números inteiros para o
 conjunto dos números inteiros é injectiva.
 
@@ -1039,7 +1178,7 @@ os elementos do domínio original fora do domínio restricto.)
 \end{exmp}
 
 \begin{exmp}
-\label{exem331}
+
 Determine se a função $f(x)=x+1$ do conjunto dos números reais para o mesmo
 conjunto é injectiva.
 \begin{description}
@@ -1080,5 +1219,5 @@ função.
 \end{description}
 \end{defn}
 
-\section{Matrizes (Opcional)}
-\section{Sequências (Opcional)}
+%\section{Matrizes (Opcional)}
+%\section{Sequências (Opcional)}

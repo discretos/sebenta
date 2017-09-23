@@ -104,7 +104,10 @@ Por vezes um \textit{link} de comunicação de conecta um centro de dados consig
 próprio, possivelmente um laço de realimentação para diagnóstico. Uma rede deste
 tipo é ilustrada na Figura \ref{fig53}. Para modelar esta rede precisamos
 incluir arestas que conectem um vértice consigo próprio. Tais arestas são
-chamadas de \textbf{laços} e as vezes
+chamadas de \textbf{laços} e as vezes podemos até ter mais de um laço no
+vértice. Grafos que podem incluir laços, e possivelmente múltiplas arestas
+conectando o mesmo par de vértices ou um vértice consigo próprio, são por vezes
+chamados de \textbf{pseudo-grafos}.
 
 \begin{figure}[H]
 	\centering
@@ -112,5 +115,167 @@ chamadas de \textbf{laços} e as vezes
 	\caption{Uma Rede de Computadores com Links para Diagnósticos.}
 	\label{fig53}
 \end{figure}
+
+
+Até agora os grafos que apresentamos são \textbf{grafos não-direccionados}. As
+suas arestas também são chamadas de \textbf{não direccionadas}. No entanto, para
+construir um modelo de grafo, talvez achemos necessário atribuir direcções às
+arestas do grafo. Por exemplo, numa rede de computadores, alguns \emph{links}
+poderão operar apenas em uma direcção (tais ligaçõs são chamadas de linhas
+\emph{duplex} simples). Isto pode ser o caso quando existe uma quantidade enorme
+de tráfego enviada para alguns centros de dados, com pouco ou nenhum tráfego na
+direcção oposta.
+
+Para modelar tais redes de computadores utilizamos um grafo direccionado. Cada
+aresta de um grafo direccionado está associada à um par ordenado. A definição de
+um grafo direccionado que apresentamos aqui é mais geral do que a utilizada no
+Capítulo \ref{cap:relacoes}, onde utilizamos grafos direccionados para
+representar relações.
+
+\begin{defn}
+\label{def52}
+Um \emph{grafo direccionado} (ou \emph{digrafo}) $(V,E)$ consiste num conjunto
+não-vazio de vértices $V$ e um conjunto de \emph{arestas direccionadas} (ou
+\emph{arcos}) $E$. Cada aresta direccionada está associada à um par ordenado de
+vértices. A aresta direccionada associada ao par ordenado $(u,v)$ é dita que
+\emph{começa} em $u$ e \emph{termina} em $v$.
+\end{defn}
+
+Quando representamos um grafo direccionado por meio de linhas, podemos utilizar
+uma seta a apontar de $u$ à $v$ para indicar a direcção de uma aresta que começa
+em $u$ e termina em $v$. Um grafo direccionado pode conter laços e pode conter
+múltiplas arestas direccionadas que começam e terminam nos mesmos vértices. Um
+grafo direccionado pode também conter arestas direccionads que conectam os
+vértices $u$ e $v$ em ambas direcções; isto é, quando o dígrafo contém uma
+aresta de $u$ à $v$, pode também conter uma ou mais arestas de $v$ para $u$.
+Note que obtemos um grafo direccionado quando atribuímos uma direcção a cada
+aresta em um grafo não-direccionado. Quando um grafo direccionado não possui
+laços e não possui múltiplas arestas direccionadas, é chamado de \textbf{grafo
+direccionado simples}. Como um grafo direccionado simples possui no máximo uma
+aresta associada à cada par ordenado de vértices $(u,v)$, chamamos $(u,v)$ de
+uma aresta se existe uma aresta associada à si no grafo.
+
+Em algumas redes de computadores, multiplas ligações de comunicação entre dois
+centros de dados podem ser representadas, como ilustrado na figura \ref{fig54}.
+Grafos direccionados que possam ter \textbf{múltiplas arestas direccionadas} de
+um vértice para outro vértice (possivelmente o mesmo) são usados para modelar
+tais redes. Chamamos tais grafos de \textbf{multigrafos direccionados}. Quando
+existm $m$ arestas direccionadas, cada associada à um par ordenado de vértices
+$(u,v)$, dizemos que $(u,v)$ é uma aresta de \textbf{multiplicidade} $m$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=2]{chapter/imagens/54}
+	\caption{Uma Rede de Computadores Múltiplos Links de Uma Via.}
+	\label{fig54}
+\end{figure}
+
+Para alguns modelos podemos necessitar um grafo onde algums arestas não são
+direccionadas, enquanto que outras são direccionadas. Um grafo com ambas arestas
+direccionadas e não-direccionadas é chamado de \textbf{grafo misto}. Por
+exemplo, um grafo misto pode ser utilizado para modelar uma rede de computadores
+que contém ligações que operam em ambas direcções e outras ligações que operam
+apenas em uma direcção.
+
+Esta terminologia para os vários tipos de grafos é sumarizada na Tabela
+\ref{tab51}. Iremos algumas vezes utilizar o termo \textbf{grafo} como um termo
+deral para descrever grafos com arestas direccionadas ou não direccionadas (ou
+ambos), com ou sem laços e com ou sem arestas múltiplas. Em outros casos, quando
+o contexto estiver claro, iremos utilizar o termo grafo para nos referirmos
+apenas aos grafos não-direccionados.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|}%
+\toprule
+\textbf{Tipo} & \textbf{Arestas} & \textbf{Múltiplas Arestas?} &
+\textbf{Laços?}
+\\
+\midrule
+Grafo simples & Não direccionada & Não & Não \\
+Multigrafo & Não direccionada & Sim & Não \\
+Pseudo-grafo & Nao direccionada & Sim & Sim \\
+Grafo direccionado simples & Direccionada & Não & Não \\
+Multigrafo direccionado & Direccionada & Sim & Sim \\
+Grafo misto & Direccionada e& Sim & Sim\\
+&  \qquad não direccionada & &\\
+\bottomrule%
+\end{tabular}%
+\caption{Terminologia dos Grafos.}
+\label{tab51}
+\end{table}
+
+Por causa do recente interesse na teoria dos gradfos, e por causa da sua
+aplicação à uma variedade de disciplinas, muitas terminologias da teoria dos
+grados foram introduzidas. O estudante deverá determinar como tais termos estão
+a ser utilizados quando os encontrar na literatura. A terminologia utilizada por
+matemáticas para descrever grafos tem sido padronizada incrementalmente, mas a
+terminologia usada em outras disciplinas ainda é muito variada. Embora a
+terminologia usada para descrever grafos pode variar, três questões nos ajudam a
+entender a estrutura de um grafo:
+\begin{itemize}
+  \item As arestas do grafo são não-direccionadas ou direccionadas (ou ambas)?
+  \item Se o grafo é não-direccionado, existem múltiplas arestas que conectam o
+  mesmo par de vértices? Se o grafo é direccionado, existem múltiplas arestas
+  direccionads?
+  \item Existem laços?
+\end{itemize}
+
+Responder a estas questões ajuda-nos a entender grafos independemente da
+terminologia particular utilizada.
+
+
+\subsection*{\underline{Modelos de Grafos}}
+
+\begin{description}
+\item[REDES SOCIAIS]
+\item[REDES DE COMUNICAÇÃO]
+\item[REDES DE INFORMAÇÃO]
+\item[APLICAÇÕES PARA O DESENHO DE SOFTWARE]
+\item[REDES DE TRANSPORTE]
+\item[REDES BIOLÓGICAS]
+\item[TORNEIOS]
+\end{description}
+
+\section{Terminologia dos Grafos e Tipos de Grafos Especiais}
+\subsection*{\underline{Introdução}}
+\subsection*{\underline{Terminologia Básica}}
+\subsection*{\underline{Alguns Grafos Simples Especiais}}
+\subsection*{\underline{Grafos Bipartidos}}
+\subsection*{\underline{Grafos Bipartidos e Combinações}}
+\subsection*{\underline{Algumas Aplicações dos Tipos de Grafos Especiais}}
+\subsection*{\underline{Novos Grafos à Partir de Grados Antigos}}
+
+\section{Representação de Grados e Isomorfismo de Grafos}
+\subsection*{\underline{Introdução}}
+\subsection*{\underline{Representação de Grafos}}
+\subsection*{\underline{Matrizes de Adjacência}}
+\subsection*{\underline{Matrizes de Incidência}}
+\subsection*{\underline{Isomorfismo de Grafos}}
+\subsection*{\underline{Determinando se Dois Grafos Simples são Isomórficos}}
+
+\section{Conectividade}
+\subsection*{\underline{Introdução}}
+\subsection*{\underline{Trajectória}}
+\subsection*{\underline{Conectividade de Grafos Não-Direccionados}}
+\subsection*{\underline{O Quão Conectado é Um Grafo}}
+\subsection*{\underline{Conectividade de Grafos Direccionados}}
+\subsection*{\underline{Trajectória e Isomorfismo}}
+\subsection*{\underline{Contando a Trajectória entre Vértices}}
+
+\section{Trajectória de Euler e de Hamilton}
+
+\section{Problemas do Caminho-Mais-Curto}
+
+\section{Grafos Planares}
+
+\section{Coloração de Grafos}
+
+
+
+
+
+
+
 
 

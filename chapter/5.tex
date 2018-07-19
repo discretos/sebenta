@@ -227,8 +227,57 @@ terminologia particular utilizada.
 
 \subsection*{\underline{Modelos de Grafos}}
 
+Grafos são utilizados numa enorme variedade de modelos. Iniciamos esta secção
+por descrever como construir modelos de redes de comunicação que ligam centros
+de dados. Iremos completar a secção por descrever alguns modelos diversos de
+grados para algumas aplicações interessantes. Iremos retornar à algumas dessas
+aplicações mais no final do capítulo. Iremos introduzir modelos adicionais de
+grafos em secções subsequentes.
+
 \begin{description}
-\item[REDES SOCIAIS]
+\item[REDES SOCIAIS] Grafos são extensivamente utilizados para modelar
+estruturas sociais baseadas nos diferentes tipos de relacionamentos entre
+pessoas ou grupos de pessoas. Estas estruturas sociais, e os grafos que as
+representam, são chamadas de \textbf{redes sociais}. Nestes modelos de grafos,
+indivíduos ou organizaçãoes são representados por vértices; relacionamentos
+entre indivíduos ou organizaçãoes são representadas por arestas. O estudo de
+redes sociais é uma área multidisciplinar extremamente activa, e muitos
+diferentes tipos de relacionamento entre pessoas foram estudados utilizando as
+mesmas. Iremos apresentar algumas das mais geralmente estudadas redes sociais.
+
+\begin{exmp}
+\label{exem51}
+\textbf{Grafos de Relação Pessoal e de Amizade} Podemos utilizar um grafo
+simples para representar o facto de duas pessoas se conhecerem ou não, isto é, se
+têm uma relação pessoal ou se são amigos (no mundo real ou no mundo
+virtual através de uma rede social como o Facebook). Cada pessoa num grupo
+particular de pessoas é representada por um vértice. Uma aresta
+não-direccionada é usada para conectar duas pessoas quando estas pessoas
+conhecem-se, ou seja têm uma relação pessoal ou se são amigos.
+Não são utilizadas múltiplas arestas nem laços (se quisermos introduzir o
+conceito de auto-conhecimento, acrescentaríamos laços). Um exemplo de grafo de
+relação pessoal é apresentado na Figura \ref{fig55}. O grafo de relação pessoal
+de todas as pessoas no mundo possui mais de seis biliões de vértices e
+provavelmente mais de um trilião de arestas!
+\end{exmp}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.5]{chapter/imagens/55}
+	\caption{Um Grafo de Relação Pessoal.}
+	\label{fig55}
+\end{figure}
+
+\tikz \graph [layout=layered, radius=1cm] {
+k -- j -- p -- e;
+j -- l -- jl -- kr;
+p -- t -- k -- c;
+p -- k -- a -- s -- kk;
+t -- s -- sq;
+p -- lz;
+a -- lz;
+};
+
 \item[REDES DE COMUNICAÇÃO]
 \item[REDES DE INFORMAÇÃO]
 \item[APLICAÇÕES PARA O DESENHO DE SOFTWARE]
@@ -246,7 +295,7 @@ terminologia particular utilizada.
 \subsection*{\underline{Algumas Aplicações dos Tipos de Grafos Especiais}}
 \subsection*{\underline{Novos Grafos à Partir de Grados Antigos}}
 
-\section{Representação de Grados e Isomorfismo de Grafos}
+\section{Representação de Grafos e Isomorfismo de Grafos}
 \subsection*{\underline{Introdução}}
 \subsection*{\underline{Representação de Grafos}}
 \subsection*{\underline{Matrizes de Adjacência}}
